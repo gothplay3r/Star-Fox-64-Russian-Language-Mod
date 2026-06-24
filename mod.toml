@@ -1,0 +1,18 @@
+[manifest]
+id = "sf64_russian_language_mod"
+version = "1.0.0"
+display_name = "Russian Language Mod"
+description = "Russian localization."
+short_description = "Russian localization."
+authors = [ "gothplay3r" ]
+game_id = "sf64"
+minimum_recomp_version = "1.0.0"
+dependencies = [  ]
+native_libraries = [  ]
+
+[inputs]
+elf_path = "build/mod.elf"
+mod_filename = "Russian_Language_Mod_v1_0_0"
+func_reference_syms_file = "Starfox64RecompSyms/sf64.us.rev1.syms.toml"
+data_reference_syms_files = [ "Starfox64RecompSyms/sf64.us.rev1.datasyms.toml" ]
+additional_files = [ "thumb.png" ]

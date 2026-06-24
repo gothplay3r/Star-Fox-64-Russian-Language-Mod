@@ -1,0 +1,16 @@
+{
+  "name": "Russian_Language_Mod",
+  "display_name": "Russian Language Mod",
+  "version": "1.0.0",
+  "author": "gothplay3r",
+  "website_url": "https://boosty.to/gothplay3r",
+  "repository_url": "https://github.com/gothplay3r/Star-Fox-64-Russian-Language-Mod",
+  "description": "Русская локализация.",
+  "game_id": "sf64",
+  "mod_id": "sf64_russian_language_mod",
+  "minimum_recomp_version": "1.0.0",
+  "dependencies": [],
+  "nrm_filename": "Russian_Language_Mod_v1_0_0.nrm",
+  "package_filename": "gothplay3r-Russian_Language_Mod-1.0.0.zip",
+  "nrm_description": "Russian localization."
+}

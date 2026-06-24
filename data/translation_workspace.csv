@@ -1,0 +1,2302 @@
+id,symbol,section_id,word_count,slot_capacity_words,original_text,translation_ru
+1,gMsg_ID_1,000_intro_story,914,914,"Corneria, fourth planet of the Lylat
+system. The evil Andross turned this
+once thriving system into a wasteland
+of near extinction.
+
+General Pepper of the Cornerian army
+was successful in exiling this
+maniacal scientist to the barren,
+deserted planet Venom.
+
+Five years later, General Pepper
+noticed strange activity coming from
+Venom. James McCloud, Pigma Dengar
+and Peppy Hare of the Star Fox team
+were sent to investigate. Upon their
+arrival, Pigma betrayed the team and
+James and Peppy were captured by
+Andross.
+
+Peppy barely escaped Venom and
+returned home to tell James' son Fox
+about his father's fate.
+
+A few years have passed. Andross has
+again invaded the Lylat system.
+General Pepper has turned to a new
+Star Fox team headed by Fox McCloud
+to save Corneria and free the Lylat
+system once again.","Корнерия, четвёртая планета
+системы Лайлат. Зловещий
+Андросс превратил эту некогда
+процветающую систему в пустошь,
+где сама жизнь оказалась
+на грани исчезновения.
+
+Генералу Пепперу из армии
+Корнерии удалось сослать
+этого безумного учёного
+на пустынную и безжизненную
+планету Веном.
+
+Пять лет спустя генерал Пеппер
+заметил странную активность,
+исходящую с Венома. На разведку
+отправили Джеймса МакКлауда,
+Пигму Денгара и Пеппи Хэйра
+из команды Стар Фокс.
+Но едва они прибыли, Пигма
+предал команду. Джеймс и Пеппи
+попали в плен к Андроссу.
+
+Пеппи чудом вырвался с Венома
+и вернулся домой, чтобы рассказать
+Фоксу, сыну Джеймса,
+о судьбе его отца.
+
+Прошло ещё несколько лет.
+Андросс снова вторгся
+в систему Лайлат. Генерал Пеппер
+обратился за помощью к новой
+команде Стар Фокс, которую
+возглавил Фокс МакКлауд.
+Теперь им предстоит спасти
+Корнерию и вновь освободить
+систему Лайлат.
+"
+10,gMsg_ID_10,010_intro_general_pepper,32,32,"We need your help,
+Star Fox!
+
+[NEXT_BOX]","Мы нуждаемся в
+твоей помощи, 
+Стар Фокс!"
+20,gMsg_ID_20,010_intro_general_pepper,29,29,"Andross has declared
+war!
+
+[NEXT_BOX]","Андросс объявил
+войну!"
+30,gMsg_ID_30,010_intro_general_pepper,33,33,"He's invaded the
+Lylat system
+
+[NEXT_BOX]","Он вторгся в 
+систему Лайлат"
+40,gMsg_ID_40,010_intro_general_pepper,40,40,"and is trying to
+take over Corneria!
+
+[NEXT_BOX]","и пытается 
+захватить Корнерию!"
+50,gMsg_ID_50,010_intro_general_pepper,51,51,"Our army alone
+can't do the job!
+Hurry, Star Fox!","Нам одним
+не справиться!
+Скорее, Стар Фокс!"
+60,gMsg_ID_60,010_intro_general_pepper,45,45,"Message from 
+General Pepper.
+Priority one!","Сообщение от
+Генерала Пеппера.
+Высший приоритет!"
+1200,gMsg_ID_1200,020_route_map_briefings,73,73,"It's about time you
+showed up, Fox.
+You're the only hope
+for our world!","Пришло время
+показать себя, Фокс.
+Только ты можешь
+спасти наш мир"
+1210,gMsg_ID_1210,020_route_map_briefings,54,54,"I'll do my best!
+Andross won't have
+his way with me!","Я справлюсь!
+Андросс своего
+не добьётся!"
+1220,gMsg_ID_1220,020_route_map_briefings,75,75,"Impressive, Star Fox! 
+Now watch out for 
+enemies in the 
+asteroid field.","Отлично, Стар Фокс!
+Теперь будьте начеку
+в астероидном поле."
+1230,gMsg_ID_1230,020_route_map_briefings,28,28,"I won't let you down,
+sir.","Не подведу вас,
+сэр."
+1240,gMsg_ID_1240,020_route_map_briefings,47,47,"What are you doing?
+It's too dangerous
+there!","Что вы собрались делать?
+Там слишком опасно!"
+1250,gMsg_ID_1250,020_route_map_briefings,31,31,"I can't leave Slippy
+hangin'!","Я не брошу
+Слиппи в беде!"
+1260,gMsg_ID_1260,020_route_map_briefings,65,65,"Reports indicate
+that Andross is
+working on some
+secret weapon.","По данным разведки,
+Андросс готовит
+секретное оружие."
+1270,gMsg_ID_1270,020_route_map_briefings,20,20,I'll check it out.,Разберусь.
+1280,gMsg_ID_1280,020_route_map_briefings,39,39,"Recover our base from
+the enemy army!","Отбейте нашу базу
+у войск Андросса!"
+1290,gMsg_ID_1290,020_route_map_briefings,17,17,"Roger, General.","Принял, генерал."
+1300,gMsg_ID_1300,020_route_map_briefings,78,78,"If you destroy the
+satellite, we can go
+straight for Venom!
+Be careful, Fox!","Если уничтожите
+спутник, путь на
+Веном будет открыт!
+Осторожней, Фокс!"
+1310,gMsg_ID_1310,020_route_map_briefings,12,12,I'm on it!,Будет сделано!
+1320,gMsg_ID_1320,020_route_map_briefings,68,68,"It's almost over!
+We're in your debt.
+Come back in one
+piece, Fox!","Скоро всё кончится!
+Мы перед тобой
+в долгу. Вернись
+целым, Фокс!
+"
+1330,gMsg_ID_1330,020_route_map_briefings,19,19,"Will do, General!","Вернусь, генерал!
+"
+1340,gMsg_ID_1340,020_route_map_briefings,64,64,"So you're going to 
+attack the enemy 
+base? Great idea, 
+Fox!","Значит, атакуете
+вражескую базу?
+Отличная идея, Фокс!"
+1350,gMsg_ID_1350,020_route_map_briefings,36,36,"It'll be a piece of
+cake, General!","Это проще простого,
+генерал!
+"
+1360,gMsg_ID_1360,020_route_map_briefings,54,54,"Katina is battling
+the enemy. Will you
+help 'em out?","Катина отбивается
+от врага.
+Выручите их?"
+1370,gMsg_ID_1370,020_route_map_briefings,23,23,"Affirmative, General.","Выручим, генерал."
+1380,gMsg_ID_1380,020_route_map_briefings,56,56,"Star Fox, I want you
+to take out the
+enemy bio-weapon!","Стар Фокс, вам нужно
+уничтожить вражеское
+биооружие!"
+1390,gMsg_ID_1390,020_route_map_briefings,35,35,"Yes, sir. Deploy the
+Blue-Marine!","Есть, сэр.
+Задействую
+Блю-Марин!"
+1400,gMsg_ID_1400,020_route_map_briefings,31,31,"There's an enemy base
+there?!",У врага и там база?!
+1410,gMsg_ID_1410,020_route_map_briefings,23,23,"Affirmative, General.","Подтверждаю,
+генерал."
+1420,gMsg_ID_1420,020_route_map_briefings,48,48,"The enemy army is
+gunning for you.
+Be careful!","За тобой охотится
+вся вражеская
+армия. Осторожней!"
+1430,gMsg_ID_1430,020_route_map_briefings,19,19,"Don't worry, sir!","Не волнуйтесь, сэр!"
+1440,gMsg_ID_1440,020_route_map_briefings,45,45,"Fox, we're under
+attack! Help us
+out here!","Фокс, на нас напали!
+Нужна ваша помощь!"
+1450,gMsg_ID_1450,020_route_map_briefings,16,16,I'm on my way!,Уже в пути!
+1460,gMsg_ID_1460,020_route_map_briefings,73,73,"That area's an oven!
+Don't go burning that
+Arwing! Be
+reasonable, Fox!","В этой зоне пекло,
+Фокс! Не спали
+Арвинг и держи
+голову холодной!"
+1470,gMsg_ID_1470,020_route_map_briefings,18,18,I'll be careful.,Будем осторожны.
+23000,gMsg_ID_23000,030_training,33,33,"Use the Control 
+Stick to fly.","Управляй полётом 
+с помощью
+Левого Стика."
+23001,gMsg_ID_23001,030_training,51,51,"To ascend, pull 
+back. To descend,
+push forward.","Набор высоты: Стик
+Вниз. Снижение
+:Стик Вверх."
+23002,gMsg_ID_23002,030_training,46,46,"Press Z or R to
+move left or right
+quickly.","LB или RB: быстрый
+наклон в сторону."
+23003,gMsg_ID_23003,030_training,59,59,"Press Z or R twice
+to barrel roll. It
+repels enemy fire.","Дважды LB или RB -
+бочка. Она
+отбивает огонь."
+23004,gMsg_ID_23004,030_training,44,44,"Press B to bomb.
+Press again to
+detonate.","X — бомба.
+Ещё раз — подрыв."
+23005,gMsg_ID_23005,030_training,43,43,"If you hold A, 
+it'll charge your
+laser.","Удерживай A -
+зарядится лазер."
+23006,gMsg_ID_23006,030_training,39,39,"Lock on enemies
+when charging laser.","При зарядке лазера
+захватывай цели."
+23007,gMsg_ID_23007,030_training,40,40,"You can lock on and
+shoot bombs, too.","Бомбы тоже можно
+пускать по захвату."
+23008,gMsg_ID_23008,030_training,54,54,"You get bonus pts.
+if 2 or more foes
+are destroyed.","За 2 или более 
+врагов за раз дают
+дополнительные очки."
+23009,gMsg_ID_23009,030_training,43,43,"A silver ring 
+refills the shield
+gauge.","Серебряное Кольцо
+пополнит щит."
+23010,gMsg_ID_23010,030_training,48,48,"3 gold rings will
+increase your
+shield gauge.","3 Золотых Кольца
+усилят твой щит."
+23011,gMsg_ID_23011,030_training,43,43,"The laser item
+will power up
+your laser.","Предмет Лазер
+усилит твой лазер."
+23012,gMsg_ID_23012,030_training,36,36,"Hyper is more
+powerful than twin.","Гипер Лазер мощнее
+Двойного Лазера."
+23013,gMsg_ID_23013,030_training,38,38,"Wing repair will
+repair your wings.","Ремонт Крыла
+чинит твой Арвинг."
+23014,gMsg_ID_23014,030_training,36,36,"Let's practice 
+speed and U-turn.","Отработаем скорость
+и разворот."
+23015,gMsg_ID_23015,030_training,24,24,"Press C for
+boost.",RT: ускорение.
+23016,gMsg_ID_23016,030_training,24,24,"Press C to 
+brake.",LT: торможение.
+23017,gMsg_ID_23017,030_training,35,35,"To somersault,
+press and C .","Стик Вниз и RT:
+кульбит."
+23018,gMsg_ID_23018,030_training,36,36,"You can U-turn in
+all-range mode.","Разворот доступен
+в Свободном Бою."
+23019,gMsg_ID_23019,030_training,30,30,"Press and C 
+to U-turn.","Стик Вниз и LT:
+разворот."
+23020,gMsg_ID_23020,030_training,37,37,"This only works in
+all-range mode.","Это работает только
+в Свободном Бою."
+23021,gMsg_ID_23021,030_training,42,42,"Press C to 
+change the camera
+angle.","RS: смена
+ракурса камеры."
+23022,gMsg_ID_23022,030_training,39,39,"To respond to 
+messages, press
+C .","Для ответа 
+на сообщение жми: B"
+23023,gMsg_ID_23023,030_training,30,30,"Press A once more
+to shoot.","Ещё раз A -
+выстрел."
+23024,gMsg_ID_23024,030_training,48,48,"The effect is
+greater if you
+hold the button.","Эффект будет 
+сильнее, если 
+удерживать кнопку."
+23025,gMsg_ID_23025,030_training,50,50,"If boost meter is
+red, no techniques
+will work.","Если индикатор 
+становится красным —
+манёвры недоступны."
+23026,gMsg_ID_23026,030_training,39,39,"Press START and
+choose QUIT to quit.","Нажми START и выбери
+Выйти. Для выхода
+из игры."
+23027,gMsg_ID_23027,030_training,38,38,"Collect 3 more for
+an extra Arwing.","Ещё 3 кольца дадут
+запасной Арвинг."
+23028,gMsg_ID_23028,030_training,32,32,"Now moving to
+all-range mode.","Переходим в Режим
+Свободного Боя."
+23029,gMsg_ID_23029,030_training,43,43,"You can fly 
+anywhere in
+all-range mode.","В Режиме Свободного
+Боя ты можешь
+летать куда угодно."
+23030,gMsg_ID_23030,030_training,48,48,"The yellow mark on
+radar shows your
+position.","Жёлтая метка
+на радаре —
+это ты."
+23031,gMsg_ID_23031,030_training,51,51,"If you reach the
+edge of the map,
+you'll U-turn.","Если достигнешь края
+карты, Арвинг
+развернётся."
+23032,gMsg_ID_23032,030_training,41,41,"Continue to 
+practice all-range 
+mode.","Можешь продолжить
+тренировку
+в Свободном Бою."
+2005,gMsg_ID_2005,100_corneria,18,18,Open the wings.,Расправьте крылья.
+2010,gMsg_ID_2010,100_corneria,33,33,"Check your 
+G-Diffuser system!","Проверьте
+Грави-Компенсаторы!"
+2020,gMsg_ID_2020,100_corneria,25,25,"Falco here. 
+I'm fine.","Фалко на связи.
+Всё нормально."
+2030,gMsg_ID_2030,100_corneria,34,34,"This is Peppy. 
+All systems go.","Это Пеппи.
+Все системы готовы."
+2040,gMsg_ID_2040,100_corneria,24,24,"Slippy here. 
+I'm OK.","Слиппи на связи.
+Я в порядке."
+2050,gMsg_ID_2050,100_corneria,43,43,"I see 'em up ahead!
+Let's rock and roll!","Вижу их впереди!
+Зададим им жару!"
+2061,gMsg_ID_2061,100_corneria,42,42,"Slippy, watch out! 
+Bogey on your tail!","Слиппи, берегись!
+Враг позади тебя!"
+2062,gMsg_ID_2062,100_corneria,17,17,Whoa! Help me!,"А-а!
+Помогите!"
+2336,gMsg_ID_2336,100_corneria,38,38,"Thanks, Fox! I
+thought they had me!","Спасибо, Фокс!
+Я уж подумал,
+мне крышка!"
+2055,gMsg_ID_2055,100_corneria,36,36,"We're entering
+Corneria City now!","Мы подлетаем
+К Корнерия-Сити!"
+2058,gMsg_ID_2058,100_corneria,22,22,This is horrible...,Это ужасно...
+2115,gMsg_ID_2115,100_corneria,37,37,"You've got an enemy 
+on your tail!",Враг на хвосте!
+2118,gMsg_ID_2118,100_corneria,41,41,"Use the brake
+(press the C 
+Button)!","Тормози
+(Кнопка LT)!"
+2165,gMsg_ID_2165,100_corneria,45,45,"I'll take this one.
+Get the one behind
+me!","Этого беру на себя.
+Сними тех, что
+у меня на хвосте!
+"
+2167,gMsg_ID_2167,100_corneria,41,41,"Something's wrong
+with the G-Diffuser!","Что-то не так с
+Грави-Компенсатором!"
+2166,gMsg_ID_2166,100_corneria,36,36,"I could use some 
+help here, Fox!","Мне бы не помешала 
+помощь, Фокс!"
+2110,gMsg_ID_2110,100_corneria,36,36,"Do a barrel roll 
+(Z or R twice)!","Сделай бочку
+(дважды LB или RB)!"
+2140,gMsg_ID_2140,100_corneria,39,39,"Follow your 
+father's example, 
+Fox!","Следуй примеру
+своего отца,
+Фокс!"
+2200,gMsg_ID_2200,100_corneria,26,26,"Enemy robot
+dead ahead.","Вражеский робот
+прямо по курсу."
+2210,gMsg_ID_2210,100_corneria,12,12,Let's go!,Погнали!
+2240,gMsg_ID_2240,100_corneria,27,27,"Ah, so this is
+Star Fox?","Хм, значит, это и
+есть Стар Фокс?"
+2250,gMsg_ID_2250,100_corneria,26,26,"I'm going to crush
+you!","Сейчас я вас
+уничтожу!"
+2225,gMsg_ID_2225,100_corneria,25,25,"Enemy shield
+analyzed.","Щит противника
+просканирован."
+2260,gMsg_ID_2260,100_corneria,36,36,"Those who cross
+Andross will die!","Кто встанет на пути
+Андросса, тот умрёт!"
+2230,gMsg_ID_2230,100_corneria,20,20,Aim for his back!,Бейте в спину!
+2263,gMsg_ID_2263,100_corneria,36,36,"Stop moving so I 
+can squash you!","Хватит вертеться!
+Я тебя раздавлю!"
+2265,gMsg_ID_2265,100_corneria,33,33,"You are starting 
+to annoy me.","Вы начинаете
+меня раздражать."
+2220,gMsg_ID_2220,100_corneria,30,30,"You annoying 
+little flies!","Назойливые
+букашки!"
+2275,gMsg_ID_2275,100_corneria,39,39,"I will not be
+defeated by this
+worm!","Меня не одолеет
+какой-то червяк!"
+2270,gMsg_ID_2270,100_corneria,8,8,No!!!,Нет!!!
+2280,gMsg_ID_2280,100_corneria,33,33,"My emperor...
+I've failed you!","Мой император...
+Я подвёл вас!"
+2180,gMsg_ID_2180,100_corneria,30,30,"Pretty smooth 
+flying, Fox.","Довольно плавно 
+летаешь, Фокс."
+2181,gMsg_ID_2181,100_corneria,18,18,"Follow me, Fox!","За мной, Фокс!"
+2185,gMsg_ID_2185,100_corneria,26,26,"Falco, where ya 
+going?","Фалко, ты куда?"
+2188,gMsg_ID_2188,100_corneria,38,38,"I found the target!
+Try to keep up.","Я нашёл цель!
+Постарайтесь не
+отставать "
+2090,gMsg_ID_2090,100_corneria,10,10,Gotcha!,Попался!
+2095,gMsg_ID_2095,100_corneria,17,17,"Back off, Fox!","Отвали, Фокс!"
+2290,gMsg_ID_2290,100_corneria,29,29,"Ah..someone
+wants to play!","Хм, кто-то
+хочет поиграть!"
+2298,gMsg_ID_2298,100_corneria,48,48,"Incoming enemy 
+from the rear!
+Drop altitude!","Противник с тыла!
+Снизить высоту!"
+2291,gMsg_ID_2291,100_corneria,30,30,"Deploy all units!
+CHARGE!!!","Все подразделения
+- в бой!
+В атаку!!!"
+2292,gMsg_ID_2292,100_corneria,29,29,"I've got a present
+for ya!","У меня для вас
+подарочек!"
+2299,gMsg_ID_2299,100_corneria,25,25,"Aim for the open
+spot!",Цельтесь в брешь!
+2293,gMsg_ID_2293,100_corneria,7,7,Go!!,Вперёд!!
+2294,gMsg_ID_2294,100_corneria,20,20,Who are you guys?,Вы ещё кто такие?!
+2295,gMsg_ID_2295,100_corneria,18,18,We're Star Fox!,Мы - Стар Фокс!
+2296,gMsg_ID_2296,100_corneria,32,32,"You'll never 
+defeat Andross!","Вы никогда не
+победите Андросса!"
+2335,gMsg_ID_2335,100_corneria,43,43,"We're heading out. 
+All aircraft report!","Уходим отсюда.
+Все пилоты,
+на связь!"
+2300,gMsg_ID_2300,100_corneria,43,43,"You did it! I was
+worried for a 
+moment.","Ты справился!
+Я на миг
+заволновался."
+2305,gMsg_ID_2305,100_corneria,15,15,There ya go!,Вот так!
+2310,gMsg_ID_2310,100_corneria,41,41,"You're becoming
+more like your
+father.","Ты всё больше
+напоминаешь мне
+своего отца."
+2320,gMsg_ID_2320,100_corneria,37,37,"I'm fine. You OK 
+over there, Fox?","Все нормально.
+Ты как там, Фокс?"
+2337,gMsg_ID_2337,100_corneria,33,33,"I guess I should 
+be thankful.","Пожалуй, стоит
+сказать спасибо."
+2080,gMsg_ID_2080,100_corneria,35,35,"Don't be doing
+anything foolish!","Не делай больше
+глупостей!"
+2233,gMsg_ID_2233,100_corneria,39,39,"Move it, Fox! He's
+right behind you!","Шевелись, Фокс!
+Он у тебя на хвосте!"
+2282,gMsg_ID_2282,100_corneria,38,38,"Quit screwing
+around! Do
+something!","Хватит тянуть!
+Сделай что-нибудь!"
+3005,gMsg_ID_3005,110_meteo,35,35,"Things are starting 
+to heat up!","Ну вот, теперь
+становится 
+жарковато!"
+3010,gMsg_ID_3010,110_meteo,29,29,"Quit dinkin'
+around, Slip!","Не зевай,
+Слип!"
+3015,gMsg_ID_3015,110_meteo,36,36,"We're headin' into
+the asteroids.","Входим
+в астероидное
+поле."
+3041,gMsg_ID_3041,110_meteo,29,29,"Don't mess up
+that Arwing!","Смотри, не угробь
+свой Арвинг!"
+3025,gMsg_ID_3025,110_meteo,25,25,"It's quiet.
+Too quiet.","Тихо.
+Слишком тихо."
+3026,gMsg_ID_3026,110_meteo,27,27,"Be careful!
+It's a trap!","Осторожно!
+Это ловушка!"
+3020,gMsg_ID_3020,110_meteo,24,24,"Here comes a BIG
+one!","На нас летит
+громадина!"
+3042,gMsg_ID_3042,110_meteo,26,26,"Whoa! Can you 
+make it?","Воу! Пройдёшь
+между ними?"
+3050,gMsg_ID_3050,110_meteo,34,34,"The enemy's coming
+from behind.","Враг наступает
+с тыла."
+3100,gMsg_ID_3100,110_meteo,41,41,"I guess it's your
+turn to be thankful.","Ну что, теперь
+ты у меня
+в долгу."
+3110,gMsg_ID_3110,110_meteo,27,27,"You want a piece
+of me?!","Ну что,
+получить
+хочешь?!"
+3120,gMsg_ID_3120,110_meteo,13,13,Take that!,Вот тебе!
+3040,gMsg_ID_3040,110_meteo,22,22,"Just shoot it, Fox!","Бей по нему,
+Фокс!"
+3300,gMsg_ID_3300,110_meteo,40,40,"I cannot allow you
+to go any further.","Дальше я вас
+не пропущу."
+3310,gMsg_ID_3310,110_meteo,30,30,"Let's see what 
+you've got.","Посмотрим,
+на что вы
+способны."
+3315,gMsg_ID_3315,110_meteo,39,39,"That shield is
+absorbing the 
+laser!","Его щит
+поглощает 
+лазер!"
+3371,gMsg_ID_3371,110_meteo,38,38,"You're more
+cunning than I
+thought.","Вы оказались
+хитрее, чем
+я думал."
+3320,gMsg_ID_3320,110_meteo,27,27,"I've underestimated
+you.","Я вас
+недооценил."
+3321,gMsg_ID_3321,110_meteo,18,18,How about this?,"Тогда 
+попробуйте
+вот это."
+3322,gMsg_ID_3322,110_meteo,24,24,"I'm no match
+for you.","Мне с вами
+не потягаться."
+3330,gMsg_ID_3330,110_meteo,18,18,I admit defeat.,"Я признаю своё
+поражение."
+3340,gMsg_ID_3340,110_meteo,39,39,"Are you gonna
+listen to that
+monkey?","Ты правда
+послушаешь
+эту мартышку?"
+3345,gMsg_ID_3345,110_meteo,45,45,"Ha ha! You're not 
+as stupid as you 
+look!","Ха-ха! А вы
+соображаете
+лучше, чем я думал!"
+3350,gMsg_ID_3350,110_meteo,28,28,"If this does 
+not work...","Если и это
+не сработает..."
+3370,gMsg_ID_3370,110_meteo,40,40,"I can't believe I
+lost to this scum!!","Не может быть...
+Я проиграл
+такому отребью!!"
+3360,gMsg_ID_3360,110_meteo,36,36,"Sorry to jet, but
+I'm in a hurry!","Без обид, мне
+некогда
+задерживаться!"
+14020,gMsg_ID_14020,120_sector_y,30,30,"Let's back up
+the squadron.","Вернемся и
+поможем
+эскадрильи."
+14030,gMsg_ID_14030,120_sector_y,37,37,"Somebody's gonna
+pay for all this.","Они заплатят 
+за эту бойню."
+14040,gMsg_ID_14040,120_sector_y,32,32,"Don't let any of
+'em through!",Никто не прорвётся!
+14045,gMsg_ID_14045,120_sector_y,44,44,"Something's wrong.
+I don't see 
+anything.","Что-то тут не так...
+Ничего не вижу."
+14110,gMsg_ID_14110,120_sector_y,37,37,"Surprise attack
+coming from above!","Внимание!
+Атакуют сверху!"
+14050,gMsg_ID_14050,120_sector_y,44,44,"Hold 'em! They're
+trying to get 
+through!","Сдержите их!
+Они прорываются!"
+14070,gMsg_ID_14070,120_sector_y,31,31,"Good job! 
+Keep up the pace!","Вот так, Фокс!
+Не сбавляй темп!"
+14060,gMsg_ID_14060,120_sector_y,42,42,"Fox, you're 
+supposed to
+shoot 'em all!","Фокс, ты там
+уснул? Их всех 
+сбивать надо!"
+14130,gMsg_ID_14130,120_sector_y,29,29,"I've got everything
+above.","Тех что сверху, 
+беру на себя."
+14120,gMsg_ID_14120,120_sector_y,38,38,"I'll take care of
+everything below.","А тех, что снизу,
+оставь мне."
+14180,gMsg_ID_14180,120_sector_y,27,27,"He's quick! 
+Be careful.","Он быстрый! 
+Будь осторожен."
+14140,gMsg_ID_14140,120_sector_y,46,46,"Ah ha! Thought you
+could hide from me, 
+eh?","Ага, попался!
+Думал, не найду?"
+14150,gMsg_ID_14150,120_sector_y,30,30,"Escaping? I don't
+think so!","Думаешь, получится
+убежать?
+И не надейся!"
+14160,gMsg_ID_14160,120_sector_y,24,24,"Hey! 
+Leave me alone!","ЭЙ!
+Отстань от меня!"
+14170,gMsg_ID_14170,120_sector_y,32,32,"Take 'em down with 
+one shot!","Снеси их одним
+выстрелом!"
+14190,gMsg_ID_14190,120_sector_y,41,41,"Something's up
+ahead. Looks
+different.","Впереди что-то есть.
+Выглядит странно."
+14220,gMsg_ID_14220,120_sector_y,24,24,"These guys are
+tough!",Они крепче обычных!
+14200,gMsg_ID_14200,120_sector_y,28,28,"Geez, quit moving
+around!","Чёрт, хватит
+вертеться!"
+14230,gMsg_ID_14230,120_sector_y,35,35,"Good job. Keep up
+the good work.","Отлично!
+Так держать!"
+14210,gMsg_ID_14210,120_sector_y,34,34,"Watch the radar
+carefully, Fox.","Внимательно следи
+за радаром, Фокс."
+14300,gMsg_ID_14300,120_sector_y,25,25,"Don't party just 
+yet.",Рано радуетесь.
+14310,gMsg_ID_14310,120_sector_y,35,35,"It's time to try
+our new weapon.","Пришло время 
+испробовать наше
+новое оружие."
+14330,gMsg_ID_14330,120_sector_y,21,21,I'm comin' for ya!,Я иду за тобой!
+14320,gMsg_ID_14320,120_sector_y,28,28,"What's wrong?
+Is that it?","Ну что, скисли?
+И это всё?"
+14340,gMsg_ID_14340,120_sector_y,40,40,"I'll take you guys
+out from the ship!","Да я вас даже
+отсюда разнесу!"
+14350,gMsg_ID_14350,120_sector_y,23,23,Cocky little freaks!,Наглые мелкие твари!
+14360,gMsg_ID_14360,120_sector_y,17,17,Aaaaahhhhh!!!!,А-а-а-а-а!!!
+14370,gMsg_ID_14370,120_sector_y,38,38,"We're headin' for
+Aquas. Report in.","Курс на Аквас.
+Как вы там?"
+14100,gMsg_ID_14100,120_sector_y,34,34,"You're becoming a
+better pilot.","Ты правда
+становишься
+хорошим пилотом."
+14080,gMsg_ID_14080,120_sector_y,31,31,"Is that the best
+you can do?","И это всё,
+на что ты способен?"
+9000,gMsg_ID_9000,130_fichina_fortuna_base,30,30,"Split up and take
+it to em!","Разомкнуть строй!
+Зададим им!"
+9010,gMsg_ID_9010,130_fichina_fortuna_base,40,40,"Why are ships
+coming out of the
+base?","С чего вдруг с
+базы начали 
+вылетать корабли?"
+9375,gMsg_ID_9375,130_fichina_fortuna_base,39,39,"A bomb has been
+planted at the base.","На базе
+заложена бомба."
+9380,gMsg_ID_9380,130_fichina_fortuna_base,36,36,"Geez! Can anyone
+take care of it?","Вот чёрт!
+Кто-нибудь с этим
+разберётся?"
+9385,gMsg_ID_9385,130_fichina_fortuna_base,39,39,"Let's take care of
+these guys first.","Сначала Стар Вульф.
+Затем к бомбе."
+9436,gMsg_ID_9436,130_fichina_fortuna_base,22,22,I got the last one!,Последний достался мне!
+9437,gMsg_ID_9437,130_fichina_fortuna_base,22,22,I got the last one!,Последний достался мне!
+9438,gMsg_ID_9438,130_fichina_fortuna_base,22,22,I got the last one!,Последний достался мне!
+9411,gMsg_ID_9411,130_fichina_fortuna_base,34,34,"I'll take care of
+the bomb now.","Теперь займусь
+бомбой."
+9428,gMsg_ID_9428,130_fichina_fortuna_base,19,19,"Hey, we made it!","Эй, мы сделали это!"
+9429,gMsg_ID_9429,130_fichina_fortuna_base,21,21,"Fox, take it easy!","Не геройствуй, Фокс!"
+9430,gMsg_ID_9430,130_fichina_fortuna_base,30,30,"That was a close
+call, Fox!","Еле успел, Фокс!"
+9390,gMsg_ID_9390,130_fichina_fortuna_base,35,35,"Danger. One minute
+to explosion.","Опасность. До
+взрыва осталась
+одна минута."
+9395,gMsg_ID_9395,130_fichina_fortuna_base,27,27,"30 seconds to
+explosion.","До взрыва осталось
+30 секунд."
+9400,gMsg_ID_9400,130_fichina_fortuna_base,27,27,"15 seconds to
+explosion.","До взрыва осталось 
+15 секунд."
+9405,gMsg_ID_9405,130_fichina_fortuna_base,30,30,"Bomb exploding.
+Keep clear.","Бомба сработала.
+Не приближайтесь."
+9431,gMsg_ID_9431,130_fichina_fortuna_base,37,37,"Looks like we win
+today, Star Fox.","Похоже, сегодня
+победа за нами,
+Стар Фокс."
+9432,gMsg_ID_9432,130_fichina_fortuna_base,30,30,"Close, but no cigar!
+HA HA!","Почти, но мимо!
+ХА-ХА!"
+9433,gMsg_ID_9433,130_fichina_fortuna_base,40,40,"I've got two words
+for you: LO-SER!!!","У меня для тебя
+два слова: ЛУ-ЗЕР!"
+9434,gMsg_ID_9434,130_fichina_fortuna_base,26,26,"Score one for 
+Andross!","Победа за
+Андроссом!"
+9420,gMsg_ID_9420,130_fichina_fortuna_base,42,42,"Emergency
+maneuvers! 
+Get out of there!","Экстренный манёвр!
+Уходим отсюда!"
+9425,gMsg_ID_9425,130_fichina_fortuna_base,22,22,They almost got us!,Чуть не попались!
+9426,gMsg_ID_9426,130_fichina_fortuna_base,38,38,"I'm not too crazy
+about those guys.","Не по душе мне
+эта шайка."
+9427,gMsg_ID_9427,130_fichina_fortuna_base,23,23,So that's Star Wolf?,"Стар Вульф?
+Так вот они какие."
+18000,gMsg_ID_18000,140_katina,37,37,"Hang on, guys.
+Help is on the way!","Держитесь, ребята!
+Подмога уже близко!"
+18005,gMsg_ID_18005,140_katina,20,20,Fox! You made it!,"Фокс! 
+Ты успел!"
+18006,gMsg_ID_18006,140_katina,42,42,"Bill?! Is that you?
+I can't believe it!","Билл?! Это ты?
+Не могу 
+в это поверить!"
+18007,gMsg_ID_18007,140_katina,30,30,"We can catch up
+later, Fox.","Мы сможем поговорить
+позже, Фокс."
+18010,gMsg_ID_18010,140_katina,44,44,"Hard to tell the
+good guys from the 
+bad!","Тут и не поймёшь,
+где свои,
+а где чужие!"
+18031,gMsg_ID_18031,140_katina,32,32,"You've become quite 
+a pilot.","Ты стал настоящим 
+пилотом."
+18030,gMsg_ID_18030,140_katina,32,32,"Enemy mothership
+approaching.","Материнский корабль
+врага на подходе."
+18035,gMsg_ID_18035,140_katina,18,18,Here they come!,А вот и они!
+18025,gMsg_ID_18025,140_katina,44,44,"Man, there's just 
+no end to these 
+guys!","Да сколько же
+их лезет!
+Им конца нет!"
+18040,gMsg_ID_18040,140_katina,43,43,"Go for the 4 
+hatches on the 
+underside!","Стреляйте по четырём
+люкам снизу!"
+18045,gMsg_ID_18045,140_katina,24,24,"The hatches are
+open!",Люки открылись!
+18050,gMsg_ID_18050,140_katina,40,40,"There's some sort
+of energy reaction!","Пошёл выброс
+энергии!"
+18055,gMsg_ID_18055,140_katina,47,47,"The core has 
+appeared! Stand by 
+to attack!","Ядро открыто!
+Готовьтесь
+атаковать!"
+18060,gMsg_ID_18060,140_katina,36,36,"Hurry up and take 
+out that core!","Быстрее!
+Разнесите это ядро!"
+18065,gMsg_ID_18065,140_katina,38,38,"There's not much 
+time left! Hurry!","Времени в обрез!
+Быстрее!"
+18066,gMsg_ID_18066,140_katina,25,25,"Yee haaaa!
+You did it!","Да-а-а!
+Ты справился!"
+18070,gMsg_ID_18070,140_katina,29,29,"Fox, get out of 
+here NOW!","Фокс, улетай
+оттуда! Быстро!"
+18075,gMsg_ID_18075,140_katina,31,31,"...All aircraft,
+break away!","...Всем бортам,
+уходим!"
+18080,gMsg_ID_18080,140_katina,15,15,Dang........,Чёрт...
+18085,gMsg_ID_18085,140_katina,27,27,"Don't get so down, 
+Fox.","Не вешай нос,
+Фокс."
+18100,gMsg_ID_18100,140_katina,41,41,"I'm glad we're on 
+the same team, Fox.","Рад, что ты
+с нами, Фокс."
+18090,gMsg_ID_18090,140_katina,18,18,"Take care, Fox.","Береги себя,
+Фокс."
+18105,gMsg_ID_18105,140_katina,18,18,You owe me one.,С тебя должок.
+18095,gMsg_ID_18095,140_katina,20,20,"You, too....Bill.",И ты... Билл.
+18120,gMsg_ID_18120,140_katina,31,31,"Just like old times,
+eh Fox?","Как в старые
+добрые, Фокс?"
+18130,gMsg_ID_18130,140_katina,28,28,"Stick around for 
+awhile.",Подожди немного.
+18140,gMsg_ID_18140,140_katina,33,33,"Here's something 
+for ya, Fox.","У меня есть кое-что
+для тебя, Фокс."
+18150,gMsg_ID_18150,140_katina,45,45,"Enemy down....
+Wait, that was one
+of ours!","Враг сбит...
+Стой, это был наш!"
+18018,gMsg_ID_18018,140_katina,28,28,"Fox, that's one of 
+ours!","Фокс, это один 
+из наших!"
+18020,gMsg_ID_18020,140_katina,30,30,"Husky unit,
+cover the base!","Группа Хаски,
+прикрывайте базу!"
+18021,gMsg_ID_18021,140_katina,48,48,"Bulldog unit, don't 
+let anything 
+through!","Группа Бульдог,
+никого не
+подпускайте!"
+18022,gMsg_ID_18022,140_katina,20,20,All units report!,"Всем группам,
+доложить!"
+18015,gMsg_ID_18015,140_katina,34,34,"Try shooting the
+bad guys, Fox.","Может, попробуешь
+всё же стрелять в
+плохих парней?"
+15010,gMsg_ID_15010,150_aquas,39,39,"I'm gonna check out 
+the bio-weapon.","Надо выяснить,
+что это за
+биооружие такое."
+15030,gMsg_ID_15030,150_aquas,37,37,"I'm sending the 
+data to you guys.",Передаю вам данные.
+15250,gMsg_ID_15250,150_aquas,36,36,"Shoot a torpedo to 
+help you see.","Пусти торпеду,
+она подсветит."
+15040,gMsg_ID_15040,150_aquas,41,41,"Looks like the
+pollution has 
+started.","Похоже,
+загрязнение 
+уже началось."
+15045,gMsg_ID_15045,150_aquas,16,16,It's awful...,Кошмар...
+15251,gMsg_ID_15251,150_aquas,37,37,"Wow! Look at that!
+It's beautiful!","Ого!
+Ты только глянь!
+Как красиво!"
+15050,gMsg_ID_15050,150_aquas,30,30,"How's the
+Blue-Marine, Fox?","Ну как тебе
+Блю-Марин, Фокс?"
+15051,gMsg_ID_15051,150_aquas,40,40,"It's a good thing
+you prepared, Slip.","Не зря ты
+подготовился, Слип."
+15052,gMsg_ID_15052,150_aquas,40,40,"This thing will 
+never hold together.","Да эта штука
+долго не протянет."
+15053,gMsg_ID_15053,150_aquas,47,47,"Keep shooting.
+We've got lots of 
+torpedoes!","Не жалей торпед!
+Их у нас полно!"
+15060,gMsg_ID_15060,150_aquas,17,17,"Thanks, Peppy!","Спасибо, Пеппи!"
+15220,gMsg_ID_15220,150_aquas,23,23,"Thanks a lot, Peppy!","Большое спасибо,
+Пеппи!"
+15054,gMsg_ID_15054,150_aquas,27,27,"You're the best,
+Slippy!","Ты лучший, Слип!"
+15254,gMsg_ID_15254,150_aquas,24,24,"Enemy behind.
+Descend!","Враг на хвосте!
+Ныряй ниже!"
+15100,gMsg_ID_15100,150_aquas,29,29,"I've found the
+bio-weapon.",Я нашел биоружие.
+15110,gMsg_ID_15110,150_aquas,27,27,"Aim for the two
+columns.","Стреляй по двум
+связкам!"
+15120,gMsg_ID_15120,150_aquas,25,25,"Fire a homing
+torpedo!","Пусти 
+самонаводящуюся
+торпеду!"
+15130,gMsg_ID_15130,150_aquas,18,18,"That's it, Fox.","Вот и всё, Фокс."
+15140,gMsg_ID_15140,150_aquas,19,19,Go for the eyes!,Стреляй по глазам!
+15252,gMsg_ID_15252,150_aquas,23,23,"Yippee! 
+You did it!","Ура-а!
+Ты справился!"
+15200,gMsg_ID_15200,150_aquas,27,27,"We're preparing
+to dock.","Готовимся
+к стыковке."
+15253,gMsg_ID_15253,150_aquas,42,42,"Thanks, Slip.
+Blue-Marine
+came through.","Спасибо, Слип.
+Блю-Марин
+не подвёл."
+15210,gMsg_ID_15210,150_aquas,42,42,"Slippy's not such a
+screw up after all.","А Слиппи-то,
+молодец."
+15230,gMsg_ID_15230,150_aquas,30,30,"I'll take the sky 
+any day.","А мне бы
+обратно в небо..."
+15240,gMsg_ID_15240,150_aquas,27,27,"Sheesh, Falco!
+You, too?","Ну, Фалко!
+И ты туда же?"
+5000,gMsg_ID_5000,160_sector_x,37,37,"Let's take out that 
+weapon, boys.","Займёмся этим
+оружием, парни."
+5010,gMsg_ID_5010,160_sector_x,28,28,"Let's have a 
+little fun!","Ну что, 
+развлечёмся!"
+5060,gMsg_ID_5060,160_sector_x,43,43,"Enemy group
+behind us. Man
+they're fast!","Враги на хвосте!  
+Вот же шустрые!      "
+5100,gMsg_ID_5100,160_sector_x,35,35,"We're gettin'
+close to the base.",Приближаемся к базе.
+5110,gMsg_ID_5110,160_sector_x,40,40,"Somebody beat us
+here. It's all gone!","Кто-то нас опередил.
+Тут всё разнесли! "
+5130,gMsg_ID_5130,160_sector_x,27,27,"What the heck 
+is that?!",Это ещё что такое?!
+5220,gMsg_ID_5220,160_sector_x,44,44,"I got tagged. My
+ears are still 
+ringing.","Меня задело.
+В ушах все 
+ещё звенит."
+5230,gMsg_ID_5230,160_sector_x,15,15,"Thanks, Fox.","Спасибо, Фокс."
+5300,gMsg_ID_5300,160_sector_x,43,43,"I can't wait to see 
+this secret weapon!","Не терпится глянуть
+на это секретное
+оружие!"
+5310,gMsg_ID_5310,160_sector_x,39,39,"I found the gate.
+Looks like a warp.","Нашёл ворота.
+Похоже, это варп."
+5311,gMsg_ID_5311,160_sector_x,39,39,"I'm gonna open the
+gate. Back me up!","Открываю врата.
+Прикрой меня!"
+5312,gMsg_ID_5312,160_sector_x,19,19,Bill! You're OK!,Билл! Ты цел!
+5313,gMsg_ID_5313,160_sector_x,32,32,"Of course! 
+I'm here to help.","Конечно!
+Я прибыл помочь."
+5350,gMsg_ID_5350,160_sector_x,30,30,"Something's not
+right here.",Что-то тут не так.
+5360,gMsg_ID_5360,160_sector_x,26,26,"Who took this base
+out?",Кто разнёс эту базу?
+5504,gMsg_ID_5504,160_sector_x,24,24,"YEAH! 
+Just one more.","Ха!
+Остался последний"
+5380,gMsg_ID_5380,160_sector_x,28,28,"Hurry up or you're
+toast!","Шевелись, а то
+взрывом накроет!"
+5314,gMsg_ID_5314,160_sector_x,40,40,"Take it easy, Fox.
+Don't let us down.","Аккуратней, Фокс.
+Не подведи нас."
+5400,gMsg_ID_5400,160_sector_x,33,33,"I'll attack from 
+the outside.","Я атакую 
+сбоку."
+5410,gMsg_ID_5410,160_sector_x,33,33,"Interceptor system
+dead ahead.","Система перехвата
+прямо по курсу."
+5430,gMsg_ID_5430,160_sector_x,31,31,"Where is the 
+secret weapon?","Где это 
+секретное оружие?"
+5420,gMsg_ID_5420,160_sector_x,22,22,They're everywhere!,Они повсюду!
+5470,gMsg_ID_5470,160_sector_x,39,39,"What the heck? Fox,
+look behind you!","Что за... 
+Фокс, сзади!"
+5473,gMsg_ID_5473,160_sector_x,33,33,"So this is the 
+secret weapon.","Вот оно.
+Секретное оружие."
+5492,gMsg_ID_5492,160_sector_x,20,20,"Destroy.
+Destroy.","Уничтожить.
+Уничтожить."
+5493,gMsg_ID_5493,160_sector_x,32,32,"I will terminate
+all enemies.","Я уничтожу
+всех врагов."
+5494,gMsg_ID_5494,160_sector_x,20,20,You are an enemy.,Ты враг.
+5495,gMsg_ID_5495,160_sector_x,26,26,"Where is the 
+creator?!",Где создатель?!
+5496,gMsg_ID_5496,160_sector_x,20,20,What's he saying?,Что он несёт?
+5506,gMsg_ID_5506,160_sector_x,25,25,"Yeah yeah.
+No problem.","Да-да.
+Всё нормально."
+5497,gMsg_ID_5497,160_sector_x,21,21,The view is clear.,Обзор чист.
+5498,gMsg_ID_5498,160_sector_x,22,22,Where is the enemy?,Где враг?
+5499,gMsg_ID_5499,160_sector_x,22,22,I must be complete.,"Целостность 
+нарушена."
+5505,gMsg_ID_5505,160_sector_x,29,29,"Slippy! Is 
+everything OK?","Слиппи! 
+Всё в порядке?"
+5500,gMsg_ID_5500,160_sector_x,43,43,"ROB, can you 
+confirm Slippy's
+location?","РОБ, уточни
+координаты Слиппи."
+5501,gMsg_ID_5501,160_sector_x,30,30,"Looks like he's
+on Titania.","Похоже, он
+на Титании."
+5502,gMsg_ID_5502,160_sector_x,33,33,"Slippy can be such
+a headache.","Слиппи снова
+вляпался."
+5503,gMsg_ID_5503,160_sector_x,39,39,"Distress signal
+coming from Titania.","Поступает сигнал
+бедствия с Титании."
+5080,gMsg_ID_5080,160_sector_x,25,25,"Something's
+not right.",Что-то не сходится
+5460,gMsg_ID_5460,160_sector_x,37,37,"I'm going ahead. 
+Back me up, Fox.","Я первым, Фокс.
+Прикрой меня."
+5474,gMsg_ID_5474,160_sector_x,28,28,"Destroy what?
+He's crazy.","Уничтожить что?
+Он безумен."
+5475,gMsg_ID_5475,160_sector_x,22,22,Let me handle this.,Я с ним разберусь!
+10010,gMsg_ID_10010,170_solar,37,37,"Keep an eye on your 
+shield gauge.","Не спускайте глаз
+с индикаторов
+щитов."
+10020,gMsg_ID_10020,170_solar,32,32,"The Arwing might
+not make it!","Арвинг может
+этого не выдержать!"
+10070,gMsg_ID_10070,170_solar,36,36,"Temperature is
+6000 and climbing!","Температура 6000,
+и она
+продолжает расти!"
+10080,gMsg_ID_10080,170_solar,28,28,"It's now at 8000! 
+Oh no!","Уже 8000!
+О нет!"
+10060,gMsg_ID_10060,170_solar,54,54,"This baby can take
+temperatures up to
+9000 degrees.","Этот малыш держит
+до 9000 градусов!"
+10324,gMsg_ID_10324,170_solar,47,47,"Don't fly too low!
+Your ship can't 
+take it!","Не летай слишком 
+низко! Арвинг c
+этим не справится!"
+10050,gMsg_ID_10050,170_solar,19,19,Shoot the rocks!,Стреляй по камням!
+10200,gMsg_ID_10200,170_solar,44,44,"Looks like you 
+could use some
+help, Fox.","Похоже, тебе
+не помешает
+подмога, Фокс."
+10210,gMsg_ID_10210,170_solar,9,9,Bill?!,Билл?!
+10220,gMsg_ID_10220,170_solar,37,37,"Don't get too
+excited. Here we go!","Не горячись.
+Погнали!"
+10230,gMsg_ID_10230,170_solar,25,25,"Watch yourself,
+Fox...","Береги себя,
+Фокс..."
+10255,gMsg_ID_10255,170_solar,32,32,"They're attacking 
+in groups!","Они атакуют
+группами!"
+10321,gMsg_ID_10321,170_solar,31,31,"I ain't your buddy!
+Go away!","Я не твой приятель!
+Отвали!"
+10322,gMsg_ID_10322,170_solar,38,38,"Good riddance. I
+almost got burned!","Туда ему и дорога.
+Я чуть 
+не поджарился!"
+10323,gMsg_ID_10323,170_solar,42,42,"It's too hot! I 
+can't take it
+anymore!","Здесь такое пекло!
+Я больше не выдержу!"
+10300,gMsg_ID_10300,170_solar,35,35,"THIS is the enemy's
+bio-weapon?!","ЭТО и есть 
+вражеское биооружие?"
+10310,gMsg_ID_10310,170_solar,29,29,"Andross is an
+insane fool!","Андросс совсем
+спятил!"
+10320,gMsg_ID_10320,170_solar,38,38,"Maybe it's an arm.
+Aim for the arm!","Похоже на лапу.
+Стреляйте по этой лапе!"
+10040,gMsg_ID_10040,170_solar,20,20,Brace yourselves!,Держитесь крепче!
+6010,gMsg_ID_6010,180_zoness,40,40,"Let's sneak in low
+and surprise them!","Зайдём низко и
+застанем их
+врасплох!"
+6011,gMsg_ID_6011,180_zoness,18,18,THIS is Zoness?,ЭТО Зонесс?
+6013,gMsg_ID_6013,180_zoness,34,34,"I can't believe 
+they did this!","Не могу поверить,
+что они такое
+натворили!"
+6012,gMsg_ID_6012,180_zoness,15,15,What a dump!,Ну и помойка!
+6014,gMsg_ID_6014,180_zoness,21,21,"I hear ya, Slippy.","Понимаю тебя,
+Слиппи."
+6020,gMsg_ID_6020,180_zoness,34,34,"Watch out for the
+search light!",Берегись прожектора!
+6021,gMsg_ID_6021,180_zoness,27,27,"Let's take 'em 
+all out!",Снесём их всех!
+6024,gMsg_ID_6024,180_zoness,31,31,"Uh oh. Have we
+been spotted?","Чёрт.
+Нас заметили?"
+6025,gMsg_ID_6025,180_zoness,35,35,"We're closing in
+on them, Falco!","Фалко, мы уже
+у них на хвосте!"
+6029,gMsg_ID_6029,180_zoness,47,47,"Take the right 
+light, boy. I have
+the left.","Бери правый
+прожектор, милый.
+Левый за мной."
+6026,gMsg_ID_6026,180_zoness,34,34,"Katt?! What are
+you doing here?","Кэтт?! Ты что
+здесь делаешь?"
+6027,gMsg_ID_6027,180_zoness,35,35,"Is that any way
+to greet a girl?","И это всё
+приветствие?"
+6055,gMsg_ID_6055,180_zoness,19,19,Whoa! Watch out!,А-а-а-а! Осторожно!
+6041,gMsg_ID_6041,180_zoness,32,32,"I've got somebody
+on my tail!","Кто-то сел
+мне на хвост!"
+6042,gMsg_ID_6042,180_zoness,42,42,"Mess with me and
+you'll get 
+scratched!","Свяжешься со мной - 
+познакомишься с
+моими когтями! "
+6038,gMsg_ID_6038,180_zoness,28,28,"Aim for the 
+rudder, Fox!","Фокс, бей   
+по хвосту!"
+6028,gMsg_ID_6028,180_zoness,13,13,Here I go!,Вперёд!
+6045,gMsg_ID_6045,180_zoness,42,42,"Enemy fighters
+spotted! Take 'em 
+down!","Вражеские
+истребители!
+Собьём их!"
+6050,gMsg_ID_6050,180_zoness,26,26,"These guys 
+don't quit!","Эти парни
+всё не унимаются!
+"
+6051,gMsg_ID_6051,180_zoness,9,9,Shoot!,Чёрт!
+6036,gMsg_ID_6036,180_zoness,16,16,Enemy tanker!,Вражеский танкер!
+6066,gMsg_ID_6066,180_zoness,34,34,"Be careful!
+It might be a trap!","Будьте осторожны!
+Это может быть ловушка!"
+6067,gMsg_ID_6067,180_zoness,35,35,"Something's coming
+from the sea!","Из моря что-то
+всплывает!"
+6068,gMsg_ID_6068,180_zoness,19,19,Ar ha ha ha har!,Ар-ха-ха-ха!
+6071,gMsg_ID_6071,180_zoness,30,30,"I'll teach ye some
+respect!","Я научу вас 
+уважению!"
+6074,gMsg_ID_6074,180_zoness,33,33,"Adjust 10 degrees
+right! FIRE!","На 10 градусов
+правее!
+ОГОНЬ!"
+6075,gMsg_ID_6075,180_zoness,36,36,"Pressure, angle OK.
+Fire torpedo!","Давление и угол
+в норме.
+Пуск торпеды!"
+6077,gMsg_ID_6077,180_zoness,40,40,"I can't see 
+anything...
+Fire anyway!","Ничего не вижу...
+Всё равно огонь!"
+6073,gMsg_ID_6073,180_zoness,22,22,Prepare to surface!,"Готовьтесь к всплытию!
+"
+6072,gMsg_ID_6072,180_zoness,30,30,"All sections ready.
+Engage!","Все секции готовы.
+В бой!"
+6069,gMsg_ID_6069,180_zoness,31,31,"Disrespectful
+little whelps!","Невоспитанные
+щенки!"
+6081,gMsg_ID_6081,180_zoness,33,33,"Destroy the two
+exhaust pipes!","Уничтожьте обе
+выхлопные трубы!"
+6080,gMsg_ID_6080,180_zoness,40,40,"His armor is tough!
+Use bombs wisely!","Его броня крепка!
+Используй бомбы,
+но трать их с умом!"
+6076,gMsg_ID_6076,180_zoness,31,31,"Aaargh! 
+Drop the crane now!","А-а-аргх!
+Опустить кран!
+Быстро!"
+6082,gMsg_ID_6082,180_zoness,28,28,"Quick, destroy the
+crane!","Быстрее, уничтожь 
+этот кран!"
+6090,gMsg_ID_6090,180_zoness,13,13,Oh SHOOT!!,О ЧЁРТ!
+6078,gMsg_ID_6078,180_zoness,14,14,Fire! Fire!,"Огонь!
+Огонь!"
+6079,gMsg_ID_6079,180_zoness,15,15,Arrggghhh!!!,А-а-аргх!
+6100,gMsg_ID_6100,180_zoness,40,40,"Looks like we're
+headin' for Macbeth.","Похоже, теперь
+держим курс
+на Макбет."
+6101,gMsg_ID_6101,180_zoness,25,25,"Katt, where'd you 
+go?","Кэтт, где ты там?"
+4113,gMsg_ID_4113,190_titania,25,25,"Deploy the
+Landmaster!","Запуск
+Лэндмастера!"
+4010,gMsg_ID_4010,190_titania,34,34,"Give me Slippy's
+location, ROB.","РОБ, дай мне 
+координаты Слиппи."
+4011,gMsg_ID_4011,190_titania,37,37,"Life form indicated
+at 12 o'clock.","На 12 часов 
+обнаружена
+Форма жизни."
+4012,gMsg_ID_4012,190_titania,37,37,"There's rocky 
+terrain dead ahead!","Впереди
+скалистая местность!"
+4013,gMsg_ID_4013,190_titania,39,39,"A magnetic storm!
+We'll search here.","Магнитная буря!
+Мы должны
+искать здесь."
+4020,gMsg_ID_4020,190_titania,37,37,"I think you look
+better in a tank.","А ты хорош в
+роли танкиста."
+4022,gMsg_ID_4022,190_titania,39,39,"Why don't you come
+down here, Falco?","Может сам сюда
+спустишься, Фалко?"
+4023,gMsg_ID_4023,190_titania,18,18,"I'll pass, Fox.","Пожалуй откажусь,
+Фокс."
+4021,gMsg_ID_4021,190_titania,37,37,"He can sure be
+a pain in the neck.",Ну и заноза же он.
+4024,gMsg_ID_4024,190_titania,28,28,"Don't go too fast,
+Falco.","Не рвись
+вперёд, Фалко."
+4031,gMsg_ID_4031,190_titania,37,37,"Enemy fighters
+comin' at you, Fox.","Фокс, на тебя
+мчаться вражеские
+истребители!"
+4030,gMsg_ID_4030,190_titania,26,26,"Try hovering
+(Z and R).","Попробуй воспарить
+над землей 
+(LB и RB)."
+4040,gMsg_ID_4040,190_titania,14,14,Are you OK?,Ты в порядке?
+4075,gMsg_ID_4075,190_titania,12,12,Incoming!,Берегись!
+4050,gMsg_ID_4050,190_titania,23,23,"Don't be dead, Slip.","Только будь жив,
+Слип."
+4080,gMsg_ID_4080,190_titania,45,45,"You OK? Hold
+together. Just a
+bit further.","Ты цел?
+Держись.
+Ещё чуть-чуть."
+4082,gMsg_ID_4082,190_titania,23,23,"Is that you,
+Slippy?","Это ты,
+Слиппи?"
+4083,gMsg_ID_4083,190_titania,22,22,I'll be there soon.,Скоро буду.
+4112,gMsg_ID_4112,190_titania,29,29,"I knew you'd
+come help me!","Я знал, что вы
+меня не оставите!"
+4111,gMsg_ID_4111,190_titania,10,10,Fox!!!!,Фокс!!!
+4094,gMsg_ID_4094,190_titania,43,43,"Let me get a piece
+of that action, 
+Fox!","Фокс, дай и мне
+поучаствовать!"
+4095,gMsg_ID_4095,190_titania,27,27,"Take out his 
+arms, Fox.","Целься в лапы, Фокс."
+4093,gMsg_ID_4093,190_titania,16,16,Do something!,Сделай хоть что-то!
+4097,gMsg_ID_4097,190_titania,40,40,"Slippy, what are you
+doing? Hurry up!","Слиппи, ты что
+творишь? Шевелись!"
+4098,gMsg_ID_4098,190_titania,29,29,"It's impossible 
+this way!",Так не получится!
+4096,gMsg_ID_4096,190_titania,35,35,"Pipe down, Slippy!
+Just hold on.","Уймись, Слиппи!
+Просто держись."
+4110,gMsg_ID_4110,190_titania,38,38,"I made it! I'll
+analyze right away.","Я смог!
+Сейчас же всё
+проанализирую."
+4092,gMsg_ID_4092,190_titania,41,41,"Data analysis
+complete. Here
+it comes.","Анализ завершён.
+Сейчас откроется
+для атаки."
+4091,gMsg_ID_4091,190_titania,20,20,Go for the chest!,Стреляй в грудь!
+4100,gMsg_ID_4100,190_titania,27,27,"I thought I was a
+goner!","Я уж думал,
+мне конец!"
+4101,gMsg_ID_4101,190_titania,39,39,"We're always savin'
+your hide, Slip.","Вечно мы спасаем
+твою шкуру, Слип."
+4102,gMsg_ID_4102,190_titania,37,37,"I'm sure he's 
+learned his lesson.","Думаю, урок
+он усвоил."
+4103,gMsg_ID_4103,190_titania,41,41,"When we get back,
+we'll head to Venom.","Когда вернёмся,
+держим курс
+на Веном."
+4099,gMsg_ID_4099,190_titania,31,31,"Sure you can
+handle it, Fox?","Уверен, что
+потянешь, Фокс?"
+17010,gMsg_ID_17010,200_macbeth,39,39,"I spot the train.
+I'm takin' it out!","Вижу поезд.
+Займемся им!"
+17360,gMsg_ID_17360,200_macbeth,37,37,"Here come the 
+little hyenas, now!","Вот и мелкие
+гиены!"
+17470,gMsg_ID_17470,200_macbeth,12,12,Try this!,Попробуйте вот это!
+17400,gMsg_ID_17400,200_macbeth,35,35,"They're not taking
+me seriously.","Вы что, меня
+всерьёз вообще
+не воспринимаете?"
+17020,gMsg_ID_17020,200_macbeth,39,39,"Hey, I've got my
+hands full up here.","Эй, у меня 
+тут и своих 
+проблем хватает!"
+17476,gMsg_ID_17476,200_macbeth,13,13,Take this!,Получите!
+17030,gMsg_ID_17030,200_macbeth,41,41,"Don't let 'em get
+to the supply depot!","Не дайте им
+добраться до
+склада снабжения!
+"
+17130,gMsg_ID_17130,200_macbeth,42,42,"Startin' without
+me? Boys, I'm
+crushed.","Ах, начали без меня?
+Мальчики, вы мне
+сердце разбили."
+17131,gMsg_ID_17131,200_macbeth,25,25,"Katt?! 
+Not you again.","Кэтт?!
+Тебя только
+тут не хватало."
+17140,gMsg_ID_17140,200_macbeth,47,47,"I've got the left.
+You take the right, 
+hon.","Левый беру я.
+Правый твой,
+милый."
+17474,gMsg_ID_17474,200_macbeth,30,30,"How's the 
+Landmaster, Fox?","Как там
+Лэндмастер, Фокс?"
+17450,gMsg_ID_17450,200_macbeth,18,18,"No!!
+Get away!!","Нет!!
+Прочь от поезда!!"
+17100,gMsg_ID_17100,200_macbeth,45,45,"I see the fuel 
+bunker on the 
+right side.","Вижу справа
+топливный бункер!"
+17110,gMsg_ID_17110,200_macbeth,27,27,"Change the switch
+ahead.","Переведи стрелку
+впереди."
+17120,gMsg_ID_17120,200_macbeth,42,42,"Shoot the 8 
+switches to open
+the lock.","Бей по всем восьми
+стрелкам, чтобы
+снять блокировку."
+17370,gMsg_ID_17370,200_macbeth,33,33,"Dang! Detach the
+rear vehicle.","Чёрт! Отцепить
+хвостовой вагон!"
+17380,gMsg_ID_17380,200_macbeth,38,38,"What's wrong? Come
+a little closer!","Что-то не так?
+Подъезжай поближе! "
+17150,gMsg_ID_17150,200_macbeth,30,30,"OK! Now shoot
+the switcher.","Хорошо! Теперь
+стреляй по стрелкам."
+17420,gMsg_ID_17420,200_macbeth,39,39,"I didn't expect to
+have to use this!","Не думал, что
+придётся пустить
+это в ход!"
+17430,gMsg_ID_17430,200_macbeth,21,21,You're very lucky.,Ты тот еще везунчик.
+17410,gMsg_ID_17410,200_macbeth,38,38,"I'll lure these 
+guys to the front.","Заманю их
+к началу состава!"
+17460,gMsg_ID_17460,200_macbeth,31,31,"Heh heh heh...
+what's wrong?","Хе-хе-хе...
+Что-то не так?"
+17475,gMsg_ID_17475,200_macbeth,37,37,"You're too slow.
+Time to end this!","Вы слишком
+медлительны.
+Пора заканчивать!"
+17440,gMsg_ID_17440,200_macbeth,11,11,Gwaaa!!!,Гва-а-а!!!
+17170,gMsg_ID_17170,200_macbeth,45,45,"Well, at least we
+can take this boss 
+out.","Ну, хотя бы с
+макакой этой
+разберёмся."
+17350,gMsg_ID_17350,200_macbeth,37,37,"I'm outta here. 
+Take care, Falco.","Мне пора.
+Береги себя,
+Фалко."
+17160,gMsg_ID_17160,200_macbeth,19,19,"Good going, Fox.","Отличная работа,
+Фокс."
+17471,gMsg_ID_17471,200_macbeth,25,25,"NO! 
+Hit the brakes!!!","Нет!
+По тормозам!!!"
+17472,gMsg_ID_17472,200_macbeth,19,19,I can't STOP IT!,"Я не могу
+его остановить!"
+17320,gMsg_ID_17320,200_macbeth,39,39,"Now it's our turn
+to kick some tail!","Теперь наша очередь
+задать им жару!"
+17310,gMsg_ID_17310,200_macbeth,34,34,"I'm sure we hurt
+'em this time.","В этот раз им
+крепко досталось."
+17300,gMsg_ID_17300,200_macbeth,45,45,"You're pretty good,
+tiger. See you 
+again!","А ты хорош,
+тигр.
+Ещё увидимся!"
+17330,gMsg_ID_17330,200_macbeth,45,45,"I can see the look
+on their stupid 
+faces!","Так и вижу,
+какие у них сейчас
+дурацкие рожи!"
+17390,gMsg_ID_17390,200_macbeth,14,14,Here ya go!,Вот вам!
+17473,gMsg_ID_17473,200_macbeth,19,19,Step on the gas!,Тапку в пол!
+16010,gMsg_ID_16010,210_sector_z,35,35,"Enemy approaching
+from the left.","Враг приближается
+слева."
+16020,gMsg_ID_16020,210_sector_z,30,30,"We'll gladly take
+this one.","С этими мы
+с радостью
+разберёмся."
+16030,gMsg_ID_16030,210_sector_z,16,16,Nice welcome!,Вот так встреча!
+16050,gMsg_ID_16050,210_sector_z,37,37,"Six missiles coming
+from the left.","Слева приближаются
+шесть ракет."
+16055,gMsg_ID_16055,210_sector_z,40,40,"Missile one is
+heading for
+Great Fox.","Первая ракета
+идёт на
+Грейт Фокс."
+16060,gMsg_ID_16060,210_sector_z,17,17,Here it comes!,Вот она!
+16080,gMsg_ID_16080,210_sector_z,36,36,"Missile approaching.
+Distance 50.","Ракета на подходе.
+Дистанция 50."
+16085,gMsg_ID_16085,210_sector_z,36,36,"Missile approaching.
+Distance 20.","Ракета на подходе.
+Дистанция 20."
+16090,gMsg_ID_16090,210_sector_z,32,32,"Distance 10.
+Unable to evade.","Дистанция 10.
+Уклонение
+невозможно."
+16100,gMsg_ID_16100,210_sector_z,32,32,"Missiles 2 and 3
+approaching!","Ракеты 2 и 3
+приближаются!"
+16040,gMsg_ID_16040,210_sector_z,35,35,"I'm heading for the
+missile now.",Иду на перехват.
+16046,gMsg_ID_16046,210_sector_z,29,29,"I'm going for the
+missile.",Беру на себя.
+16047,gMsg_ID_16047,210_sector_z,36,36,"I'm heading for the 
+missile now.",Иду на перехват.
+16120,gMsg_ID_16120,210_sector_z,33,33,"Are you gonna hog
+all the fun?","Снова веселитесь
+без меня?
+"
+16125,gMsg_ID_16125,210_sector_z,43,43,"Katt?! Can't you go
+bother someone else?","Кэтт?! Может,
+достанешь
+кого-нибудь другого?"
+16130,gMsg_ID_16130,210_sector_z,23,23,Let me help you out.,"Дай-ка я
+помогу."
+16110,gMsg_ID_16110,210_sector_z,36,36,"Missiles 4, 5 and 6 
+approaching!","Ракеты 4, 5 и 6
+приближаются!"
+16135,gMsg_ID_16135,210_sector_z,21,21,Make way for Katt!,Дорогу Кэтт!
+16170,gMsg_ID_16170,210_sector_z,20,20,One missile down.,"Одной ракетой
+меньше!"
+16175,gMsg_ID_16175,210_sector_z,26,26,"One missile 
+destroyed.","Одна ракета
+уничтожена."
+16180,gMsg_ID_16180,210_sector_z,23,23,Scratch one missile.,"Минус одна
+ракета."
+16185,gMsg_ID_16185,210_sector_z,37,37,"I took care of a
+missile for ya.","С ракетой
+разобралась."
+16140,gMsg_ID_16140,210_sector_z,41,41,"Beautiful! I could 
+kiss you for that!","Прекрасно!
+За такое можно
+и поцеловать!"
+16150,gMsg_ID_16150,210_sector_z,21,21,"You owe me, Falco.","С тебя должок,
+Фалко."
+16160,gMsg_ID_16160,210_sector_z,46,46,"You're on your own.
+Good luck, little 
+man.","Дальше сам.
+Удачи, малыш."
+16165,gMsg_ID_16165,210_sector_z,23,23,"Too bad, little man.","Жаль, малыш."
+16200,gMsg_ID_16200,210_sector_z,25,25,"ROB, is
+everything OK?","РОБ, всё в порядке?"
+16250,gMsg_ID_16250,210_sector_z,19,19,Great Fox is OK.,"С Грейт Фоксом
+полный порядок."
+16210,gMsg_ID_16210,210_sector_z,43,43,"Damage to rear left
+section of the ship.","Повреждён левый
+кормовой отсек
+корабля."
+16220,gMsg_ID_16220,210_sector_z,29,29,"Dang, now they've
+done it!","Ну всё, они
+напросились!"
+16270,gMsg_ID_16270,210_sector_z,37,37,"We've got the bad
+guys on the run.","Мы обратили их
+в бегство."
+16230,gMsg_ID_16230,210_sector_z,41,41,"It could be
+difficult to attack
+Venom.","Штурмовать Веном
+теперь будет
+непросто."
+16280,gMsg_ID_16280,210_sector_z,30,30,"Don't worry.
+Slippy's here!","Не волнуйтесь.
+Слиппи уже здесь!"
+16240,gMsg_ID_16240,210_sector_z,14,14,Doggone it!,Чёрт возьми!
+16260,gMsg_ID_16260,210_sector_z,26,26,"That was a close 
+call.",Едва пронесло.
+11010,gMsg_ID_11010,220_bolse,33,33,"OK guys, destroy
+all barriers.","Давайте ребята,
+уничтожим 
+все барьеры."
+11020,gMsg_ID_11020,220_bolse,33,33,"Aim for the six
+energy towers.","Ваша цель, 6
+энергетических 
+башен."
+11030,gMsg_ID_11030,220_bolse,24,24,"I'll cover you, 
+Fox.","Прикрою тебя, Фокс."
+11210,gMsg_ID_11210,220_bolse,33,33,"Those ships are
+shielded, too!","У этих кораблей
+тоже щиты!"
+11220,gMsg_ID_11220,220_bolse,37,37,"You are NOT taking
+him down today.","Сегодня вам Фокса
+не сбить!"
+11240,gMsg_ID_11240,220_bolse,22,22,They don't give up.,"Они и не думают
+сдаваться."
+11230,gMsg_ID_11230,220_bolse,31,31,"What's taking so 
+long, Fox?","Ну же, Фокс,
+не тяни!"
+11050,gMsg_ID_11050,220_bolse,42,42,"Hey! The force 
+field is 
+disappearing!","Смотрите!
+Силовое поле
+исчезает!"
+11060,gMsg_ID_11060,220_bolse,32,32,"Looks like we've
+got company.","Похоже, к нам
+пожаловали гости."
+11150,gMsg_ID_11150,220_bolse,30,30,"Good. I see the
+enemy core.","Отлично, вижу
+вражеское ядро."
+11160,gMsg_ID_11160,220_bolse,32,32,"Destroy the
+satellite's core!","Уничтожь
+ядро спутника!"
+11100,gMsg_ID_11100,220_bolse,31,31,"Play time is over,
+Star Fox!","Наигрались,
+Стар Фокс!"
+11110,gMsg_ID_11110,220_bolse,41,41,"I think I'll 
+torture you for 
+awhile!","Пожалуй, я тебя
+немного помучаю!"
+11120,gMsg_ID_11120,220_bolse,43,43,"Daddy screamed
+REAL good before
+he died!","Твой папочка
+славно вопил
+перед смертью!"
+11130,gMsg_ID_11130,220_bolse,34,34,"You'll be sorry
+you crossed us!","Вы ещё пожалеете,
+что перешли нам
+дорогу!"
+11241,gMsg_ID_11241,220_bolse,29,29,"Star Wolf again?!
+Why now?","Снова Стар Вульф?!
+Почему сейчас?!"
+11200,gMsg_ID_11200,220_bolse,23,23,"Venom, here we come.","Веном, жди нас!
+"
+11040,gMsg_ID_11040,220_bolse,24,24,"Your carcass is
+mine!","Твоя тушка
+уже моя!"
+7005,gMsg_ID_7005,230_area_6,28,28,"Caiman here.
+No problems.","Кайман на связи.
+Всё чисто."
+7006,gMsg_ID_7006,230_area_6,36,36,"Do you copy?
+Emergency
+maneuvers!","Приём?
+Срочно
+уклоняйтесь!"
+7011,gMsg_ID_7011,230_area_6,29,29,"Too late! 
+Game over, pal!","Поздно, приятель!
+Игра окончена!"
+7012,gMsg_ID_7012,230_area_6,35,35,"Entering Venom air
+defense zone.","Входим в
+оборонительную зону
+Венома."
+7013,gMsg_ID_7013,230_area_6,24,24,"Everybody stay
+alert!",Будьте начеку!
+7014,gMsg_ID_7014,230_area_6,21,21,Space mines ahead!,"Впереди
+космические мины!"
+7065,gMsg_ID_7065,230_area_6,39,39,"Bogey behind me. 
+Am I gettin' slow?","Враг на хвосте.
+Я что, теряю хватку?"
+7020,gMsg_ID_7020,230_area_6,35,35,"Hold still and let
+me shoot you!","Не вертись!
+Сейчас собью!"
+7054,gMsg_ID_7054,230_area_6,28,28,"Great Fox will
+cover you.","Грейт Фокс
+прикроет тебя."
+7050,gMsg_ID_7050,230_area_6,26,26,"Incoming enemy
+missile!","Вражеская ракета
+на подходе!"
+7051,gMsg_ID_7051,230_area_6,38,38,"Shoot 'em down!
+We're being marked!","Сбейте их!
+Мы уже на мушке!"
+7052,gMsg_ID_7052,230_area_6,18,18,Did we get 'em?,Мы их подбили?
+7053,gMsg_ID_7053,230_area_6,16,16,"Not yet, sir!","Пока нет, сэр!"
+7066,gMsg_ID_7066,230_area_6,39,39,"They're on me! I'm
+gettin' careless!","Сели на хвост!
+Зря я расслабился!"
+7043,gMsg_ID_7043,230_area_6,40,40,"We're gonna break
+through that fleet.","Мы прорвёмся
+через этот флот."
+7095,gMsg_ID_7095,230_area_6,42,42,"They've broken
+through the first 
+line!","Они прорвали
+первый рубеж!"
+7096,gMsg_ID_7096,230_area_6,35,35,"They're through
+the second line!","Они прорвали
+второй рубеж!"
+7094,gMsg_ID_7094,230_area_6,38,38,"Fire! Fire!
+Don't let them
+through!","Огонь! Огонь!
+Не дайте им
+прорваться!"
+7070,gMsg_ID_7070,230_area_6,23,23,Venom's right there!,Веном совсем рядом!
+7099,gMsg_ID_7099,230_area_6,35,35,"The last line has
+been breached!","Последний рубеж
+прорван!"
+7097,gMsg_ID_7097,230_area_6,24,24,"These guys are
+crazy!","Да они
+совсем спятили!"
+7098,gMsg_ID_7098,230_area_6,23,23,"Dang! DEPLOY
+IT NOW!","Чёрт!
+Выпускайте
+немедленно!"
+7061,gMsg_ID_7061,230_area_6,37,37,"Enemy ahead. This
+one's different.","Впереди враг.
+Он не похож
+на остальных."
+7064,gMsg_ID_7064,230_area_6,35,35,"Crud! We were SO
+close to Venom.","Вот чёрт!
+Мы были почти
+у самого Венома!"
+7085,gMsg_ID_7085,230_area_6,23,23,"YEAH! 
+It's working!","ДА!
+Это сработало!"
+7086,gMsg_ID_7086,230_area_6,14,14,Yeah! Yeah!,Да! Да!
+7083,gMsg_ID_7083,230_area_6,41,41,"Shoot the tentacles 
+to open the core!","Бей по щупальцам,
+чтобы открыть ядро!"
+7084,gMsg_ID_7084,230_area_6,34,34,"Destroy all three
+energy balls.","Уничтожь все три
+энергосферы."
+7087,gMsg_ID_7087,230_area_6,38,38,"The shield is gone!
+Shoot the core!","Щит исчез!
+Бей по ядру!"
+7100,gMsg_ID_7100,230_area_6,13,13,All right!,Вот так!
+7093,gMsg_ID_7093,230_area_6,43,43,"Hold on! We're
+entering Venom
+air space.","Держитесь!
+Входим в воздушное
+пространство Венома."
+8010,gMsg_ID_8010,240_venom_route,35,35,"Don't relax. We're
+not done yet.","Не расслабляйтесь.
+У нас ещё
+много работы."
+8020,gMsg_ID_8020,240_venom_route,39,39,"Time to show the
+monkeys who's boss!","Пора показать
+этим обезьянкам,
+кто тут главный!"
+8030,gMsg_ID_8030,240_venom_route,42,42,"This brings back
+memories of your 
+dad.","Словно снова лечу
+рядом с твоим отцом."
+8045,gMsg_ID_8045,240_venom_route,31,31,"These guys just
+keep coming.","Они всё лезут
+и лезут!"
+8050,gMsg_ID_8050,240_venom_route,24,24,"Don't go dyin'
+on me!","Не вздумай мне
+тут погибнуть!"
+8040,gMsg_ID_8040,240_venom_route,27,27,"You'll be sorry, 
+punks!","Вы об этом
+еще пожалеете, 
+уродцы!"
+8060,gMsg_ID_8060,240_venom_route,22,22,I'll take the left.,Иду левым флангом!
+8070,gMsg_ID_8070,240_venom_route,22,22,I've got the right.,Иду правым флангом.
+8080,gMsg_ID_8080,240_venom_route,28,28,"I'm beaten up
+pretty bad.","Меня здорово
+потрепало."
+8210,gMsg_ID_8210,240_venom_route,43,43,"I've got a BAD
+feeling about this, 
+Fox.","Фокс, чую, добром
+это не кончится."
+8100,gMsg_ID_8100,240_venom_route,30,30,"Jeez Laweez!
+What is that?!","Ничего себе!
+Это ещё что?!"
+8110,gMsg_ID_8110,240_venom_route,35,35,"That temple gives
+me the creeps.","От этого храма
+мурашки по коже."
+8120,gMsg_ID_8120,240_venom_route,38,38,"What's going on?
+He's runnin' away!","Что за дела?
+Он удирает!"
+8130,gMsg_ID_8130,240_venom_route,14,14,Stay alert!,Смотрите в оба! 
+8140,gMsg_ID_8140,240_venom_route,30,30,"Don't get too 
+close, Fox!!","Не лезь слишком
+близко, Фокс!!"
+8205,gMsg_ID_8205,240_venom_route,32,32,"It's all comin'
+down to this.","К этому всё
+и шло."
+8215,gMsg_ID_8215,240_venom_route,30,30,"I'll go it alone
+from here.",Дальше я сам.
+8220,gMsg_ID_8220,240_venom_route,8,8,Fox!!,Фокс!!
+8230,gMsg_ID_8230,240_venom_route,8,8,Fox!!,Фокс!!
+8240,gMsg_ID_8240,240_venom_route,8,8,Fox!!,Фокс!!
+8250,gMsg_ID_8250,240_venom_route,39,39,"I've been waiting
+for you, Star Fox.","Я ждал тебя,
+Стар Фокс."
+8255,gMsg_ID_8255,240_venom_route,38,38,"You know that I
+control the galaxy.","Ты знаешь, что
+вся галактика
+под моей властью."
+8260,gMsg_ID_8260,240_venom_route,36,36,"It's foolish to 
+come against me.","Глупо было
+идти против меня."
+8265,gMsg_ID_8265,240_venom_route,38,38,"You will die just
+like your father.","Ты умрёшь так же,
+как твой отец."
+8300,gMsg_ID_8300,240_venom_route,21,21,"Fox!! 
+Are you OK?","Фокс!!
+Ты в порядке?"
+8310,gMsg_ID_8310,240_venom_route,22,22,"YES!! 
+You did it!!","ДА!!
+Ты справился!"
+8320,gMsg_ID_8320,240_venom_route,40,40,"OK, I'll admit it.
+You did good, Fox.","Ладно, признаю.
+Ты хорош, Фокс."
+19205,gMsg_ID_19205,251_venom_star_wolf_finale,14,14,Huh? What?!,А? Что?!
+19200,gMsg_ID_19200,251_venom_star_wolf_finale,34,34,"Don't get too cocky, 
+Star Fox!","Не зазнавайтесь,
+Стар Фокс!"
+19210,gMsg_ID_19210,251_venom_star_wolf_finale,43,43,"Let's see how you
+handle our new 
+ships!","Посмотрим, как вы
+сладите с нашими
+новыми кораблями!"
+19220,gMsg_ID_19220,251_venom_star_wolf_finale,42,42,"Too bad dad's not 
+here to see ya FAIL!","Жаль, твой папаша
+не увидит,
+как ты опозоришься!"
+19230,gMsg_ID_19230,251_venom_star_wolf_finale,44,44,"We'll make sure
+you never reach 
+Andross!","Мы не дадим вам
+добраться
+до Андросса!"
+19240,gMsg_ID_19240,251_venom_star_wolf_finale,41,41,"We'll just see 
+about that,
+Star Wolf.","Это мы ещё
+посмотрим,
+Стар Вульф."
+19250,gMsg_ID_19250,251_venom_star_wolf_finale,26,26,"You guys don't
+give up.","Вы, ребята,
+всё никак
+не уймётесь, да?"
+19462,gMsg_ID_19462,251_venom_star_wolf_finale,31,31,"I see you've got 
+new ships.","Смотрю, у вас
+новые корабли."
+19463,gMsg_ID_19463,251_venom_star_wolf_finale,29,29,"Hey, nice aircraft, 
+guys!","Эй, классные у вас
+корабли, парни!"
+19454,gMsg_ID_19454,251_venom_star_wolf_finale,32,32,"You're good, but 
+I'm better.","Ты хорош,
+но я лучше."
+19450,gMsg_ID_19450,251_venom_star_wolf_finale,31,31,"What?! Is that all 
+you got?","Что?! Это всё,
+на что ты способен?"
+19458,gMsg_ID_19458,251_venom_star_wolf_finale,31,31,"No way! 
+I don't believe it!","Не может быть!
+Я не верю!
+"
+19455,gMsg_ID_19455,251_venom_star_wolf_finale,35,35,"Not yet. The
+party's just begun!","Не так быстро.
+Веселье только
+начинается!"
+19451,gMsg_ID_19451,251_venom_star_wolf_finale,26,26,"I'll take care of 
+you!","Я сам займусь
+тобой!"
+19459,gMsg_ID_19459,251_venom_star_wolf_finale,19,19,He's too strong!,Он слишком силён!
+19456,gMsg_ID_19456,251_venom_star_wolf_finale,47,47,"You can't beat me. 
+I've got a better 
+ship!","Тебе меня не 
+одолеть! У меня
+корабль получше!"
+19452,gMsg_ID_19452,251_venom_star_wolf_finale,36,36,"I'm gonna bust you 
+up REAL good!","Я тебя сейчас
+хорошенько
+отделаю!"
+19460,gMsg_ID_19460,251_venom_star_wolf_finale,27,27,"This can't be
+happening!","Да быть такого
+не может!"
+19457,gMsg_ID_19457,251_venom_star_wolf_finale,29,29,"Give it up.
+You can't win!","Сдавайтесь!
+Вам не победить!"
+19453,gMsg_ID_19453,251_venom_star_wolf_finale,28,28,"You're not welcome 
+here!",Здесь вам не рады!
+19461,gMsg_ID_19461,251_venom_star_wolf_finale,12,12,Ahhhh!!!!,А-а-а-а!!!!
+19464,gMsg_ID_19464,251_venom_star_wolf_finale,22,22,I can't break free!,Не могу оторваться!
+19465,gMsg_ID_19465,251_venom_star_wolf_finale,27,27,"There's one more 
+to go.","Остался
+ещё один."
+19010,gMsg_ID_19010,250_andross_true_finale,29,29,"Say your prayers,
+Andross!","Проси пощады,
+Андросс!"
+19325,gMsg_ID_19325,250_andross_true_finale,32,32,"Now you will feel 
+TRUE pain!","Теперь ты познаешь
+ИСТИННУЮ боль!"
+19330,gMsg_ID_19330,250_andross_true_finale,42,42,"Only I have the 
+brains to rule 
+Lylat!","Лишь мой разум
+способен править
+Лайлатом!"
+19466,gMsg_ID_19466,250_andross_true_finale,41,41,"So, Andross, you 
+show your true form!","Вот он какой,
+твой истинный
+облик, Андросс!"
+19335,gMsg_ID_19335,250_andross_true_finale,41,41,"If I go down, I'm 
+taking you with me!","Если я паду,
+заберу тебя с собой!"
+19468,gMsg_ID_19468,250_andross_true_finale,31,31,"Don't ever give up, 
+my son.","Никогда не сдавайся,
+сын мой."
+19350,gMsg_ID_19350,250_andross_true_finale,11,11,Father?!,Отец?!
+19340,gMsg_ID_19340,250_andross_true_finale,18,18,"Follow me, Fox.","Следуй за мной,
+Фокс."
+19355,gMsg_ID_19355,250_andross_true_finale,17,17,"This way, Fox.","Фокс, сюда."
+19360,gMsg_ID_19360,250_andross_true_finale,39,39,"Never give up.
+Trust your
+instincts.","Никогда не сдавайся.
+Доверяй инстинктам."
+19370,gMsg_ID_19370,250_andross_true_finale,32,32,"You've become so
+strong, Fox.","Ты так окреп, Фокс."
+19467,gMsg_ID_19467,250_andross_true_finale,36,36,"Hurry, Fox. 
+I'm waiting for you.","Быстрей, Фокс.
+Я жду тебя."
+9100,gMsg_ID_9100,131_all_range_common_help,31,31,"Shoot! He's right
+behind me!","Чёрт! Он прямо
+за моей спиной!"
+9110,gMsg_ID_9110,131_all_range_common_help,28,28,"Fox, get this guy
+off me!","Фокс, сбей его!
+Он у меня
+на хвосте!"
+9120,gMsg_ID_9120,131_all_range_common_help,40,40,"Take care of the
+guy behind me, 
+Fox!","Фокс, прикрой!
+За мной погоня."
+9130,gMsg_ID_9130,131_all_range_common_help,27,27,"I can't shake 
+this guy!","Я никак не могу 
+от него отделаться!"
+9140,gMsg_ID_9140,131_all_range_common_help,42,42,"This is really
+starting to tick
+me off!","Это действительно
+начинает
+меня раздражать!"
+9150,gMsg_ID_9150,131_all_range_common_help,34,34,"What's taking you
+so long, Fox?","Почему ты
+так долго, Фокс?"
+9151,gMsg_ID_9151,131_all_range_common_help,17,17,"Dang, I'm hit!","Чёрт, я сбит!"
+9152,gMsg_ID_9152,131_all_range_common_help,18,18,Ahhh!! I'm hit!,Аааа!! Меня сбили!
+9153,gMsg_ID_9153,131_all_range_common_help,23,23,"Shoot! 
+They got me!","Чёрт! 
+Меня подбили!"
+9160,gMsg_ID_9160,131_all_range_common_help,43,43,"Gee, I've been 
+saved by Fox.
+How swell.","Ну надо же, меня
+спас сам Фокс.
+Какая честь."
+9170,gMsg_ID_9170,131_all_range_common_help,27,27,"Hoo! That was
+TOO close.","Уф! Это было
+СЛИШКОМ близко."
+9180,gMsg_ID_9180,131_all_range_common_help,40,40,"Your father helped
+me like that, too.","Твой отец тоже
+когда-то так
+меня выручил."
+9190,gMsg_ID_9190,131_all_range_common_help,30,30,"Time for a little 
+payback!","Пора немного
+поквитаться!"
+9200,gMsg_ID_9200,131_all_range_common_help,37,37,"You're not gettin'
+away that easy!","Тебе так легко
+не уйти!"
+9210,gMsg_ID_9210,131_all_range_common_help,36,36,"I won't let you get
+away from me!","Я не позволю тебе
+уйти от меня!"
+9211,gMsg_ID_9211,131_all_range_common_help,25,25,"You're dead
+meat, pal!","Тебе конец,
+дружище!"
+9212,gMsg_ID_9212,131_all_range_common_help,20,20,I've got you now!,Теперь я тебя поймал!
+9213,gMsg_ID_9213,131_all_range_common_help,15,15,You're mine!,Попался!
+9220,gMsg_ID_9220,131_all_range_common_help,21,21,Scratch one bogey!,Ещё один готов!
+9230,gMsg_ID_9230,131_all_range_common_help,13,13,I got one!,У меня получилось!
+9240,gMsg_ID_9240,131_all_range_common_help,20,20,There's one down!,Один уже сбит!
+9250,gMsg_ID_9250,132_star_wolf_first_encounters,36,36,"Can't let you do 
+that, Star Fox!","Не выйдет,
+Стар Фокс!"
+9260,gMsg_ID_9260,132_star_wolf_first_encounters,43,43,"Andross has ordered
+us to take you down.","Андросс велел
+покончить с вами."
+9270,gMsg_ID_9270,132_star_wolf_first_encounters,46,46,"We're gettin' paid
+a lot of cash for 
+this.","Нам за ваши головы
+отвалят кучу
+деньжат."
+9275,gMsg_ID_9275,132_star_wolf_first_encounters,27,27,"Peppy! Long time
+no see!","Пеппи! Давно
+не виделись! "
+9280,gMsg_ID_9280,132_star_wolf_first_encounters,30,30,"Andross' enemy is
+my enemy.","Враг Андросса -
+мой враг."
+9285,gMsg_ID_9285,132_star_wolf_first_encounters,39,39,"Just what I need 
+to see. Star Wolf.","Еще вас тут
+не хватало.
+Стар Вульф."
+9289,gMsg_ID_9289,132_star_wolf_first_encounters,40,40,"You'll be seeing
+your dad soon, 
+Fox!","Скоро встретишься
+с отцом, Фокс!"
+9290,gMsg_ID_9290,132_star_wolf_first_encounters,43,43,"You're in my 
+sights! You're
+going down!","Ты уже на прицеле.
+Попрощайся с жизнью!"
+9300,gMsg_ID_9300,132_star_wolf_first_encounters,36,36,"You're not as tough
+as I thought.","А я ожидал
+большего."
+9310,gMsg_ID_9310,132_star_wolf_first_encounters,33,33,"That reward's as
+good as mine!","Награда уже
+у меня в кармане!"
+9320,gMsg_ID_9320,132_star_wolf_first_encounters,32,32,"Bow before the
+great Andross!","Преклоните колено
+перед великим
+Андроссом!"
+9322,gMsg_ID_9322,132_star_wolf_first_encounters,23,23,You're not so tough!,"Не так уж ты
+и силён!"
+9323,gMsg_ID_9323,132_star_wolf_first_encounters,39,39,"Annoying bird! 
+I am the great Leon!","Достал, пернатый!
+Я великий Леон!"
+9324,gMsg_ID_9324,132_star_wolf_first_encounters,35,35,"I'll do you fast,
+Peppy old pal.","Пеппи, старина,
+с тобой я закончу
+быстро."
+9325,gMsg_ID_9325,132_star_wolf_first_encounters,30,30,"Stick to the pond,
+Froggie.","Твоё место в пруду,
+лягушонок!"
+9330,gMsg_ID_9330,132_star_wolf_first_encounters,41,41,"I will not be
+defeated by this 
+trash!","Такой отброс
+меня не одолеет!"
+9340,gMsg_ID_9340,132_star_wolf_first_encounters,28,28,"Shoot me down
+if you can!","Сбей меня,
+если сможешь!"
+9350,gMsg_ID_9350,132_star_wolf_first_encounters,33,33,"Come on, little man!
+Shoot me!","Ну давай, мелкий!
+Стреляй!"
+9360,gMsg_ID_9360,132_star_wolf_first_encounters,26,26,"I'm not afraid of 
+YOU!",Я тебя не боюсь!
+9365,gMsg_ID_9365,132_star_wolf_first_encounters,20,20,I...can't...lose!,"Я... не могу...
+проиграть!"
+9366,gMsg_ID_9366,132_star_wolf_first_encounters,27,27,"This can't be
+happening!","Такого не должно
+было произойти!"
+9367,gMsg_ID_9367,132_star_wolf_first_encounters,37,37,"My beautiful reward!
+Aaarrrggghhh!","Моя драгоценная
+награда!
+А-а-а-а!!!"
+9368,gMsg_ID_9368,132_star_wolf_first_encounters,17,17,Uncle Andross!,Дядя Андросс!
+9369,gMsg_ID_9369,132_star_wolf_first_encounters,18,18,What the heck?!,Какого...?!
+19400,gMsg_ID_19400,252_ending_team_dialogue,18,18,Fox! You're OK!,"Фокс, ты в порядке?"
+19410,gMsg_ID_19410,252_ending_team_dialogue,18,18,"Way to go, Fox!","Вот это да, Фокс!"
+19420,gMsg_ID_19420,252_ending_team_dialogue,21,21,That's our leader!,"Вот он, наш лидер!"
+19430,gMsg_ID_19430,252_ending_team_dialogue,21,21,"What's wrong, Fox?","Что с тобой, Фокс? "
+19440,gMsg_ID_19440,252_ending_team_dialogue,30,30,"Nothing...
+Nothing's wrong.","Ничего...
+Всё нормально. "
+21010,gMsg_ID_21010,252_ending_team_dialogue,33,33,"Star Fox, we
+are in your
+debt.","Стар Фокс,
+мы перед вами
+в долгу."
+21020,gMsg_ID_21020,252_ending_team_dialogue,64,64,"I would be
+honored to
+have you as
+part of the
+Cornerian
+army.","Для меня было бы
+честью видеть вас
+в рядах
+армии Корнерии."
+21030,gMsg_ID_21030,252_ending_team_dialogue,50,50,"Oh no, sir.
+We prefer
+doing things
+our own way.","Нет, сэр.
+Мы предпочитаем
+действовать
+по-своему."
+21050,gMsg_ID_21050,252_ending_team_dialogue,29,29,"Great Fox is ready 
+to go.","Грейт Фокс
+готов к вылету."
+21060,gMsg_ID_21060,252_ending_team_dialogue,31,31,"It is time for
+us to go now.",Нам пора.
+21070,gMsg_ID_21070,252_ending_team_dialogue,19,19,I'm going right!,Ухожу вправо!
+21071,gMsg_ID_21071,252_ending_team_dialogue,18,18,I'm going left!,Я беру левый фланг!
+21072,gMsg_ID_21072,252_ending_team_dialogue,16,16,I'm going up!,Ухожу вверх!
+21073,gMsg_ID_21073,252_ending_team_dialogue,18,18,I'm going down!,Ухожу вниз!
+21080,gMsg_ID_21080,252_ending_team_dialogue,19,19,I'm going right!,Ухожу вправо!
+21081,gMsg_ID_21081,252_ending_team_dialogue,18,18,I'm going left!,Ухожу влево!
+21082,gMsg_ID_21082,252_ending_team_dialogue,16,16,I'm going up!,Ухожу вверх!
+21083,gMsg_ID_21083,252_ending_team_dialogue,18,18,I'm going down!,Ухожу вниз!
+21090,gMsg_ID_21090,252_ending_team_dialogue,19,19,I'm going right!,Ухожу вправо!
+21091,gMsg_ID_21091,252_ending_team_dialogue,18,18,I'm going left!,Ухожу влево!
+21092,gMsg_ID_21092,252_ending_team_dialogue,16,16,I'm going up!,Ухожу вверх!
+21093,gMsg_ID_21093,252_ending_team_dialogue,18,18,I'm going down!,Ухожу вниз!
+20010,gMsg_ID_20010,800_common_radio_team_chatter,23,23,All aircraft report!,"Все пилоты,
+на связь!"
+20011,gMsg_ID_20011,800_common_radio_team_chatter,22,22,"I'm fine, I'm fine!","Я в порядке, 
+всё нормально!"
+20012,gMsg_ID_20012,800_common_radio_team_chatter,21,21,Everything's A-OK.,Полный порядок.
+20013,gMsg_ID_20013,800_common_radio_team_chatter,32,32,"I'm havin' some
+trouble here!","Меня тут
+прижали!"
+20014,gMsg_ID_20014,800_common_radio_team_chatter,38,38,"I've taken a few 
+hits, but I'm OK.","Пару раз задели,
+но я в порядке."
+20015,gMsg_ID_20015,800_common_radio_team_chatter,27,27,"I thought I was a
+goner.","Я думал, что мне
+конец."
+20016,gMsg_ID_20016,800_common_radio_team_chatter,38,38,"I saw my life flash
+before my eyes!","У меня вся жизнь
+перед глазами
+пронеслась!"
+20017,gMsg_ID_20017,800_common_radio_team_chatter,34,34,"Ah, you're getting
+better, Fox.","Вижу, ты растёшь,
+Фокс."
+20018,gMsg_ID_20018,800_common_radio_team_chatter,26,26,"You are SO 
+lucky, Fox.","Вот уж тебе 
+свезло, Фокс."
+20019,gMsg_ID_20019,800_common_radio_team_chatter,34,34,"You worry about 
+your own hide.","За себя
+переживай."
+20020,gMsg_ID_20020,800_common_radio_team_chatter,14,14,Are you OK?,Ты в порядке?
+20030,gMsg_ID_20030,800_common_radio_team_chatter,29,29,"Shoot! I've taken 
+damage!","Чёрт! Меня
+задели!"
+20040,gMsg_ID_20040,800_common_radio_team_chatter,17,17,Dang! I'm hit!,"Вот чёрт!
+Я сбит!"
+20050,gMsg_ID_20050,800_common_radio_team_chatter,16,16,Slippy's hit!,Слиппи подбили!
+20060,gMsg_ID_20060,800_common_radio_team_chatter,36,36,"Hey, Einstein! 
+I'm on your side!","Эй, Эйнштейн!
+Я на твоей стороне!"
+20070,gMsg_ID_20070,800_common_radio_team_chatter,21,21,"Knock it off, Fox!","Прекрати, Фокс!"
+20080,gMsg_ID_20080,800_common_radio_team_chatter,29,29,"Hey! 
+What's the big idea?","Эй!
+Ты чего творишь?"
+20084,gMsg_ID_20084,800_common_radio_team_chatter,42,42,"You tryin' to 
+damage my pretty 
+face?!","Ты что, вздумал
+попортить моё
+милое личико?!"
+20085,gMsg_ID_20085,800_common_radio_team_chatter,33,33,"Hey! See if I help 
+you again!","Эй! Ещё раз -
+и будешь сам 
+выкручиваться!"
+20090,gMsg_ID_20090,800_common_radio_team_chatter,9,9,No!!!!,Нет!!!!
+20091,gMsg_ID_20091,800_common_radio_team_chatter,9,9,No!!!!,Нет!!!!
+20092,gMsg_ID_20092,800_common_radio_team_chatter,9,9,No!!!!,Нет!!!!
+20150,gMsg_ID_20150,800_common_radio_team_chatter,20,20,Hey! He was mine!,"Эй! Этот был
+мой!"
+20160,gMsg_ID_20160,800_common_radio_team_chatter,29,29,"What's the big 
+idea, Fox?","Ты что творишь,
+Фокс?"
+20170,gMsg_ID_20170,800_common_radio_team_chatter,33,33,"Go find your own 
+target, Fox!","Найди себе
+свою цель, Фокс!"
+20180,gMsg_ID_20180,800_common_radio_team_chatter,18,18,All-range mode.,Режим свободного боя.
+20190,gMsg_ID_20190,800_common_radio_team_chatter,39,39,"What do you think
+you're doing, Fox?","Ты что себе
+позволяешь, Фокс?"
+20200,gMsg_ID_20200,800_common_radio_team_chatter,30,30,"Watch where you're 
+flying!",Смотри куда летишь!
+20210,gMsg_ID_20210,800_common_radio_team_chatter,21,21,Get out of my way!,Прочь с дороги!
+20220,gMsg_ID_20220,800_common_radio_team_chatter,39,39,"Oh man! I'm gonna 
+have to back off.","Чёрт, дело дрянь...
+Выхожу из боя!"
+20221,gMsg_ID_20221,800_common_radio_team_chatter,46,46,"Sorry, guys, I've 
+gotta sit this one 
+out.","Простите, ребята,
+я выбываю."
+20222,gMsg_ID_20222,800_common_radio_team_chatter,36,36,"I'm monkey food if
+I don't leave!","Если не свалю,
+стану кормом
+для обезьян!"
+20230,gMsg_ID_20230,800_common_radio_team_chatter,40,40,"Location confirmed.
+Sending supplies.","Координаты
+подтверждены.
+Высылаю припасы."
+20235,gMsg_ID_20235,800_common_radio_team_chatter,33,33,"Use the boost to
+chase (C ).","Ускорься, чтобы
+не отставать!
+(Кнопка RT)!"
+20236,gMsg_ID_20236,800_common_radio_team_chatter,33,33,"Try a somersault
+( and C ).","Сделай кульбит
+(RT и Стик Вниз)!"
+20237,gMsg_ID_20237,800_common_radio_team_chatter,29,29,"Try a U-turn
+( and C ).","Попробуй разворот
+(LT и Стик Вниз)!"
+20238,gMsg_ID_20238,800_common_radio_team_chatter,31,31,"Use bombs wisely
+(B Button).","Используй бомбы, но
+не трать понапрасну
+(Кнопка X)!"
+20239,gMsg_ID_20239,800_common_radio_team_chatter,36,36,"Use the boost to
+get thru (C ).","Ускорься, чтобы
+проскочить!
+(Кнопка RT)"
+20250,gMsg_ID_20250,800_common_radio_team_chatter,27,27,"I'm here to rescue 
+you!","Ну что, Фокс,
+без меня никак?"
+20260,gMsg_ID_20260,800_common_radio_team_chatter,19,19,Don't forget me!,Не забывай меня!
+20261,gMsg_ID_20261,800_common_radio_team_chatter,35,35,"Your skills have 
+improved, Fox.","Ты стал опытнее,
+Фокс."
+20262,gMsg_ID_20262,800_common_radio_team_chatter,37,37,"I guess you're good
+for something.","Ладно, толк от
+тебя всё-таки
+есть."
+20263,gMsg_ID_20263,800_common_radio_team_chatter,14,14,"Great, Fox!","Отлично, Фокс!"
+20264,gMsg_ID_20264,800_common_radio_team_chatter,9,9,Peppy!,Пеппи!
+20265,gMsg_ID_20265,800_common_radio_team_chatter,9,9,Falco!,Фалко!
+20266,gMsg_ID_20266,800_common_radio_team_chatter,10,10,Slippy!,Слиппи!
+20267,gMsg_ID_20267,800_common_radio_team_chatter,26,26,"Slippy, get back 
+here!","Слиппи, назад!"
+20268,gMsg_ID_20268,800_common_radio_team_chatter,29,29,"Heh heh..
+try and stop me.","Хе-хе...
+А ты догони!"
+20269,gMsg_ID_20269,800_common_radio_team_chatter,39,39,"Incoming message 
+from ROB64 (C ).","Входящее сообщение
+от РОБ64 (Кнопка B)."
+20270,gMsg_ID_20270,800_common_radio_team_chatter,12,12,Incoming!,Берегись!
+20271,gMsg_ID_20271,800_common_radio_team_chatter,18,18,Here they come!,"А вот и они!
+"
+20272,gMsg_ID_20272,800_common_radio_team_chatter,12,12,Incoming!,Берегись!
+20273,gMsg_ID_20273,800_common_radio_team_chatter,32,32,"I'm looking forward 
+to this!","Вот это будет
+забавно!"
+20274,gMsg_ID_20274,800_common_radio_team_chatter,32,32,"Ah, the son of
+James McCloud!","А, сын Джеймса
+МакКлауда!"
+20275,gMsg_ID_20275,800_common_radio_team_chatter,29,29,"I'll make those
+fools pay!","Я заставлю этих
+болванов заплатить!"
+20276,gMsg_ID_20276,800_common_radio_team_chatter,38,38,"Those tin cans are
+no match for me!","Эти жестянки
+мне не ровня!"
+20277,gMsg_ID_20277,800_common_radio_team_chatter,37,37,"Ha ha ha! You can
+NEVER defeat me!","А-ха-ха! Тебе
+НИКОГДА
+не одолеть меня!"
+20278,gMsg_ID_20278,800_common_radio_team_chatter,18,18,"Good luck, Fox.","Удачи, Фокс."
+20279,gMsg_ID_20279,800_common_radio_team_chatter,37,37,"Position confirmed.
+Everything OK.","Позиция
+подтверждена.
+Всё в порядке."
+20280,gMsg_ID_20280,800_common_radio_team_chatter,30,30,"Don't worry about 
+me, Fox!","Обо мне не
+волнуйся, Фокс!"
+20281,gMsg_ID_20281,800_common_radio_team_chatter,34,34,"I see your father 
+in you, Fox.","Ты весь в отца,
+Фокс."
+20282,gMsg_ID_20282,800_common_radio_team_chatter,32,32,"How's the Arwing 
+doing, Fox?","Как там твой
+Арвинг, Фокс?"
+20283,gMsg_ID_20283,800_common_radio_team_chatter,30,30,"Lock on the enemy
+(hold A).","Зафиксируйся на
+враге (Держи A)."
+20284,gMsg_ID_20284,800_common_radio_team_chatter,34,34,"Hold A to lock on
+to the enemy.","Держи A для фиксации
+на враге."
+20285,gMsg_ID_20285,800_common_radio_team_chatter,45,45,"To get rid of the
+aim, pause and 
+press R.","Чтобы скрыть
+прицел, поставь
+паузу и нажми RB."
+20286,gMsg_ID_20286,800_common_radio_team_chatter,23,23,"Press C to
+boost!","Нажми RT для
+ускорения! "
+20287,gMsg_ID_20287,800_common_radio_team_chatter,40,40,"Press and C 
+to do a somersault.","Чтобы выполнить 
+Кульбит, нажми RT и
+Стик Вниз. 
+"
+20288,gMsg_ID_20288,800_common_radio_team_chatter,35,35,"For a U-turn, 
+press and C .","Для Разворота нажми
+LT и Стик Вниз."
+20289,gMsg_ID_20289,800_common_radio_team_chatter,19,19,Press B to bomb.,"Нажми X чтобы
+запустить бомбу.
+"
+20290,gMsg_ID_20290,800_common_radio_team_chatter,39,39,"To barrel roll, 
+press Z or R twice.","Для бочки, нажми 
+дважды LB или RB."
+20291,gMsg_ID_20291,800_common_radio_team_chatter,23,23,"Press C 
+to brake.","Нажми LT чтобы
+замедлиться."
+20292,gMsg_ID_20292,800_common_radio_team_chatter,28,28,"To hover, 
+press Z and R.","Зажми LB и RB,
+чтобы зависнуть."
+20294,gMsg_ID_20294,800_common_radio_team_chatter,12,12,Slippy!!!,Слиппи!!!
+20296,gMsg_ID_20296,800_common_radio_team_chatter,31,31,"Come on, Fox.
+You can do it.","Давай Фокс, ты
+справишься."
+20297,gMsg_ID_20297,800_common_radio_team_chatter,14,14,Are you OK?,Ты в порядке?
+20298,gMsg_ID_20298,800_common_radio_team_chatter,40,40,"Come on, Fox. 
+Let's kick some 
+tail.","Ну же, Фокс,
+зададим им жару!"
+20299,gMsg_ID_20299,800_common_radio_team_chatter,30,30,"Don't go dyin' on 
+me, Fox.","Не вздумай
+погибнуть, Фокс."
+20300,gMsg_ID_20300,800_common_radio_team_chatter,30,30,"Let's take it to 
+'em, Fox.","Ну что, Фокс,
+вломим им!"
+20301,gMsg_ID_20301,800_common_radio_team_chatter,29,29,"Let's clean up 
+this mess.","Пора проредить
+их ряды, Фокс."
+20302,gMsg_ID_20302,800_common_radio_team_chatter,23,23,Look out behind you!,"Осторожно,
+сзади!"
+20303,gMsg_ID_20303,800_common_radio_team_chatter,40,40,"See my ship? Does 
+it look OK to you?","Сам глянь на мой
+Арвинг. Похож
+на целый?"
+20304,gMsg_ID_20304,800_common_radio_team_chatter,40,40,"Never give up.
+Trust your 
+instincts.","Никогда не сдавайся.
+Доверяй своим 
+инстинктам."
+20305,gMsg_ID_20305,800_common_radio_team_chatter,19,19,"Fox, are you OK?","Фокс, ты в порядке?"
+20306,gMsg_ID_20306,800_common_radio_team_chatter,17,17,Hold together.,Держитесь вместе.
+20307,gMsg_ID_20307,800_common_radio_team_chatter,17,17,Everything OK?,Всё в порядке?
+20308,gMsg_ID_20308,800_common_radio_team_chatter,27,27,"Whew! 
+You're all right!","Воу! 
+Ты в порядке!"
+20309,gMsg_ID_20309,800_common_radio_team_chatter,28,28,"You're not leavin', 
+yet!","Рано тебе
+помирать, Фокс!"
+20310,gMsg_ID_20310,800_common_radio_team_chatter,8,8,Crud!,Чёрт!
+20311,gMsg_ID_20311,800_common_radio_team_chatter,9,9,Oh no!,Только не это!
+20312,gMsg_ID_20312,800_common_radio_team_chatter,14,14,Doggone it!,Чёрт возьми!
+20313,gMsg_ID_20313,800_common_radio_team_chatter,32,32,"Hold A to charge 
+your laser.","Удерживай кнопку A для
+заряда лазера."
+20314,gMsg_ID_20314,800_common_radio_team_chatter,44,44,"You can also lock
+onto enemies this 
+way.","Так же можно
+захватывать
+врагов в прицел."
+20315,gMsg_ID_20315,800_common_radio_team_chatter,18,18,"Watch out, Fox!","Берегись, Фокс!"
+20316,gMsg_ID_20316,800_common_radio_team_chatter,18,18,"Watch out, Fox!","Берегись, Фокс!"
+20317,gMsg_ID_20317,800_common_radio_team_chatter,18,18,"Watch out, Fox!","Берегись, Фокс!"
+20318,gMsg_ID_20318,800_common_radio_team_chatter,12,12,Aaaaahhh!,Аааааа!
+20319,gMsg_ID_20319,800_common_radio_team_chatter,12,12,Aaaaahhh!,Аааааа!
+20320,gMsg_ID_20320,800_common_radio_team_chatter,12,12,Aaaaahhh!,Аааааа!
+20321,gMsg_ID_20321,800_common_radio_team_chatter,12,12,Aaaaahhh!,Аааааа!
+20326,gMsg_ID_20326,800_common_radio_team_chatter,29,29,"Welcome to 
+training mode.","Добро пожаловать
+на тренировку."
+20327,gMsg_ID_20327,800_common_radio_team_chatter,29,29,"Let's practice
+the basics.",Отработаем основы.
+20328,gMsg_ID_20328,800_common_radio_team_chatter,12,12,Good job.,Хорошая работа.
+20329,gMsg_ID_20329,800_common_radio_team_chatter,42,42,"This is ROB64. 
+Keep up the good 
+work.","ROB64 на связи.
+Так держать."
+20330,gMsg_ID_20330,800_common_radio_team_chatter,43,43,"Great. Now let's 
+get back to the 
+game.","Отлично.
+Вернёмся к игре."
+20331,gMsg_ID_20331,800_common_radio_team_chatter,38,38,"Falco's ship is 
+under maintenance.","Арвинг Фалко
+на обслуживании."
+20332,gMsg_ID_20332,800_common_radio_team_chatter,35,35,"Peppy's ship is in 
+for repairs.","Арвинг Пеппи
+на ремонте."
+20333,gMsg_ID_20333,800_common_radio_team_chatter,35,35,"Slippy's ship is in
+for repairs.","Арвинг Слиппи
+на ремонте."
+20337,gMsg_ID_20337,800_common_radio_team_chatter,38,38,"Falco's ship is in
+the docking bay.","Арвинг Фалко
+в ангаре."
+20338,gMsg_ID_20338,800_common_radio_team_chatter,38,38,"Peppy's ship is in
+the docking bay.","Арвинг Пеппи
+в ангаре."
+20339,gMsg_ID_20339,800_common_radio_team_chatter,39,39,"Slippy's ship is in
+the docking bay.","Арвинг Слиппи
+в ангаре."
+20340,gMsg_ID_20340,800_common_radio_team_chatter,42,42,"Maintenance 
+complete on Falco's 
+ship.","Обслуживание
+Арвинга Фалко
+завершено."
+20343,gMsg_ID_20343,800_common_radio_team_chatter,37,37,"Repairs complete on 
+Falco's ship.","Ремонт Арвинга
+Фалко завершён."
+20344,gMsg_ID_20344,800_common_radio_team_chatter,37,37,"Repairs complete on 
+Peppy's ship.","Ремонт Арвинга
+Пеппи завершён."
+20345,gMsg_ID_20345,800_common_radio_team_chatter,38,38,"Repairs complete on 
+Slippy's ship.","Ремонт Арвинга
+Слиппи завершён."
+22000,gMsg_ID_22000,900_items_short_sfx,10,10,Graaaaaa,
+22001,gMsg_ID_22001,900_items_short_sfx,10,10,Graaaaaa,
+22002,gMsg_ID_22002,900_items_short_sfx,10,10,Graaaaaa,
+22003,gMsg_ID_22003,900_items_short_sfx,6,6,Ugh!,
+22004,gMsg_ID_22004,900_items_short_sfx,11,11,Ha ha ha!,
+22005,gMsg_ID_22005,900_items_short_sfx,14,14,Ha ha ha ha!,
+22006,gMsg_ID_22006,900_items_short_sfx,7,7,Whoa!,
+22007,gMsg_ID_22007,900_items_short_sfx,9,9,Aaargh!,
+22008,gMsg_ID_22008,900_items_short_sfx,9,9,Gwaaaa!,
+22009,gMsg_ID_22009,900_items_short_sfx,13,13,Gwaaaaaaaa!,
+22010,gMsg_ID_22010,900_items_short_sfx,8,8,WHAT?!,
+22011,gMsg_ID_22011,900_items_short_sfx,44,44,"This is ONE
+steep bill,
+but it's worth it.",
+22012,gMsg_ID_22012,900_items_short_sfx,12,12,Twin laser,
+22013,gMsg_ID_22013,900_items_short_sfx,13,13,Hyper laser,
+22014,gMsg_ID_22014,900_items_short_sfx,12,12,Smart bomb,
+22015,gMsg_ID_22015,900_items_short_sfx,13,13,Shield ring,
+22016,gMsg_ID_22016,900_items_short_sfx,13,13,Check point,
+22017,gMsg_ID_22017,900_items_short_sfx,8,8,Supply,
+22018,gMsg_ID_22018,900_items_short_sfx,13,13,Wing repair,
+22019,gMsg_ID_22019,900_items_short_sfx,13,13,Supply ring,
+22020,gMsg_ID_22020,900_items_short_sfx,13,13,Wing damage,

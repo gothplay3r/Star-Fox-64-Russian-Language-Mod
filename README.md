@@ -1,4 +1,4 @@
-# Russian Language Mod
+# Русская локализация игры Starfox 64: Recompiled
 
 ![Screenshot 1](screenshots/1.png)
 

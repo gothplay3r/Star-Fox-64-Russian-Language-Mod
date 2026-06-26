@@ -1,4 +1,4 @@
-/* Auto-generated from SF64_RU_message_font_pack_FILENAMES_CLEANED.zip. */
+/* Auto-generated from SF64_RU_message_font_pack_FILENAMES_FIXED.zip. */
 #define SF64_RU_GLYPH_COUNT 66
 static const unsigned char sf64_ru_glyph_ci4[SF64_RU_GLYPH_COUNT][104] = {
     /* 0x0100 0100_U0410_А.png */

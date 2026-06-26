@@ -20,7 +20,7 @@ void Lib_TextureRect_CI4(Gfx** gfxPtr, u8* texture, u16* palette, s32 width, s32
 #define SF64_RU_BLOB_HEADER_WORDS 8
 #define SF64_RU_RADIO_MAGIC_A 0x5252
 #define SF64_RU_RADIO_MAGIC_B 0x3634
-#define SF64_RU_RADIO_MAX_WORDS 64
+#define SF64_RU_RADIO_MAX_WORDS 128
 #define MSGCHAR_END 0x0000
 #define MSGCHAR_NWL 0x0001
 #define MSGCHAR_NP2 0x0002
@@ -42,10 +42,26 @@ void Lib_TextureRect_CI4(Gfx** gfxPtr, u8* texture, u16* palette, s32 width, s32
 #define MSGCHAR_CRT 0x0012
 #define MSGCHAR_CDN 0x0013
 
-/* Radio text horizontal shift.
+/* StarLis radio text horizontal shift probe.
    Negative value moves only radio Message_DisplayText output left.
-   -4 px is the current safe value: enough margin gain without touching the portrait/frame. */
+   -4 px is the current safer probe: enough margin gain without touching the portrait/frame. */
 #define SF64_RU_RADIO_TEXT_X_SHIFT_PX (-4)
+
+/* StarLis map briefing text split.
+   FIX45: radio blob capacity is 128 words. Ordinary radio is still builder-limited
+   to the old safe 64-word/20x3 box, but map briefing manual mode can use
+   the larger blob when the original slot is too small.
+   This must be driven by the original map briefing update function, not by
+   yPos or msgPtr guesses, because the first briefing and normal radio both
+   share gRadioMsg == msgPtr in Message_DisplayText. */
+#define SF64_RU_MAP_BRIEFING_TEXT_X_SHIFT_PX (-40)
+
+/* PROBE59: intro/story scrolling text horizontal shift.
+   PROBE58 disappeared because the scrolling renderer was copied incorrectly:
+   original y clipping is yRangeLo < y < yRangeHi, newline step is 15, and QSP/HSP
+   are horizontal spacing controls. This copy follows the decomp function. */
+#define SF64_RU_INTRO_STORY_TEXT_X_SHIFT_PX (24)
+static s32 sf64_ru_in_map_briefing_radio_draw = 0;
 
 
 #include "ru_glyphs.inc"
@@ -54,7 +70,7 @@ static u16 sf64_ru_white_tlut[16] = { 0x0000, 0xFFFF, 0x0000, 0x0000, 0x0000, 0x
 static int sf64_ru_slot_applied = 0;
 
 
-/* Radio-overflow NXT guard.
+/* StarLis radio-overflow NXT guard.
    Problem fixed: original Radio_Draw advances gRadioMsgCharIndex and checks
    MSGCHAR_NXT against the original gRadioMsg buffer. For radio_overflow rows,
    drawing is redirected to the external RU buffer, but the original buffer can
@@ -66,7 +82,7 @@ static int sf64_ru_slot_applied = 0;
    - it does not repoint gMsgLookup;
    - it does not touch voice ID lookup;
    - it only corrects radio character-index progression after Radio_Draw when
-     an enabled radio_overflow blob exists for the current original msg.
+     an enabled StarLis radio_overflow blob exists for the current original msg.
 */
 extern s32 gRadioState;
 extern s32 gRadioMsgCharIndex;
@@ -1652,7 +1668,7 @@ static volatile u16 sf64_ru_blob_23031[SF64_RU_BLOB_HEADER_WORDS + 51] __attribu
 static volatile u16 sf64_ru_blob_23032[SF64_RU_BLOB_HEADER_WORDS + 41] __attribute__((used, section(".data.sf64_ru_blob"))) = { SF64_RU_BLOB_MAGIC_A, SF64_RU_BLOB_MAGIC_B, 0x0000, 0x59F8, 0x0029, 0x0000, 0x0000, SF64_RU_BLOB_TAIL };
 
 
-/* Russian Language Mod: patchable radio-only external buffers.
+/* StarLis v1.1 Radio Overflow Lab: patchable radio-only external buffers.
    These are not copied into original gMsg_ID_* slots; patched Message_* functions
    redirect radio display/width only when a buffer is enabled. */
 static volatile u16 sf64_ru_radio_blob_1[SF64_RU_BLOB_HEADER_WORDS + SF64_RU_RADIO_MAX_WORDS] __attribute__((used, section(".data.sf64_ru_radio_blob"))) = { SF64_RU_RADIO_MAGIC_A, SF64_RU_RADIO_MAGIC_B, 0x0000, 0x0001, SF64_RU_RADIO_MAX_WORDS, 0x0000, 0x0000, SF64_RU_BLOB_TAIL };
@@ -4057,7 +4073,7 @@ static int sf64_ru_should_shift_radio_text(u16* msgPtr) {
     if (msgPtr == (u16*)0) return 0;
     /* Shift the active radio message itself, including slot-copy rows. */
     if (gRadioMsg == msgPtr) return 1;
-    /* Shift Russian Language Mod radio_overflow rows when Message_DisplayText receives the
+    /* Shift StarLis radio_overflow rows when Message_DisplayText receives the
        original pointer and redirects to an external RU radio blob. */
     if (sf64_ru_radio_text_for_msg(msgPtr) != msgPtr) return 1;
     return 0;
@@ -4133,7 +4149,7 @@ RECOMP_HOOK_RETURN("Radio_Draw") void sf64_ru_radio_draw_after_guard(void) {
     /* Correct the two clipping cases:
        1) the original buffer saw MSGCHAR_NXT early and changed state to 31;
        2) the original US Radio_Draw hard cap stopped at index 60 while the
-          Russian Language Mod radio blob still has a few valid words left. */
+          StarLis radio blob still has a few valid words left. */
     if (after <= before) {
         if (sf64_ru_msg_token_at_is_visible_tail(sf64_ru_radio_before_ru_msg, before + 1)) {
             gRadioState = 4;
@@ -4182,6 +4198,14 @@ RECOMP_PATCH s32 Message_GetCharCount(u16* msgPtr) {
     return count;
 }
 
+RECOMP_HOOK("Map_BriefingRadio_Update") void sf64_ru_map_briefing_radio_update_before(void) {
+    sf64_ru_in_map_briefing_radio_draw = 1;
+}
+
+RECOMP_HOOK_RETURN("Map_BriefingRadio_Update") void sf64_ru_map_briefing_radio_update_after(void) {
+    sf64_ru_in_map_briefing_radio_draw = 0;
+}
+
 RECOMP_PATCH s32 Message_DisplayText(Gfx** gfxPtr, u16* msgPtr, s32 xPos, s32 yPos, s32 len) {
     s32 xChar;
     s32 yChar;
@@ -4189,7 +4213,11 @@ RECOMP_PATCH s32 Message_DisplayText(Gfx** gfxPtr, u16* msgPtr, s32 xPos, s32 yP
     s32 print = 0;
     u16* originalMsgPtr = msgPtr;
     if (sf64_ru_should_shift_radio_text(originalMsgPtr)) {
-        xPos += SF64_RU_RADIO_TEXT_X_SHIFT_PX;
+        if (sf64_ru_in_map_briefing_radio_draw) {
+            xPos += SF64_RU_MAP_BRIEFING_TEXT_X_SHIFT_PX;
+        } else {
+            xPos += SF64_RU_RADIO_TEXT_X_SHIFT_PX;
+        }
     }
     xChar = xPos;
     yChar = yPos;
@@ -4266,6 +4294,62 @@ RECOMP_PATCH s32 Message_IsPrintingChar(u16* msgPtr, s32 charPos) {
         }
     }
     return print;
+}
+
+
+static s32 sf64_ru_should_shift_intro_story_text(u16* originalMsgPtr) {
+    return originalMsgPtr == gMsg_ID_1;
+}
+
+/* PROBE59: exact scrolling-text route copy with only xPos altered for gMsg_ID_1.
+   Keep this separate from normal Message_DisplayText/radio/briefing. */
+RECOMP_PATCH void Message_DisplayScrollingText(Gfx** gfxPtr, u16* msgPtr, s32 xPos, s32 yPos, s32 yRangeHi, s32 yRangeLo, s32 len) {
+    s32 x;
+    s32 y;
+    s32 i;
+
+    if (sf64_ru_should_shift_intro_story_text(msgPtr)) {
+        xPos += SF64_RU_INTRO_STORY_TEXT_X_SHIFT_PX;
+    }
+
+    x = xPos;
+    y = yPos;
+
+    for (i = 0; msgPtr[i] != MSGCHAR_END && i < len; i++) {
+        switch (msgPtr[i]) {
+            case MSGCHAR_NWL:
+                x = xPos;
+                y += 15;
+                break;
+            case MSGCHAR_QSP:
+                x += 2;
+                break;
+            case MSGCHAR_HSP:
+                x += 3;
+                break;
+            case MSGCHAR_SPC:
+                x += 7;
+                break;
+            default:
+                if ((yRangeLo < y) && (y < yRangeHi)) {
+                    Message_DisplayChar(gfxPtr, msgPtr[i], x, y);
+                }
+                x += 7;
+                break;
+            case MSGCHAR_NP2:
+            case MSGCHAR_NP3:
+            case MSGCHAR_NP4:
+            case MSGCHAR_NP5:
+            case MSGCHAR_NP6:
+            case MSGCHAR_NP7:
+            case MSGCHAR_PRI0:
+            case MSGCHAR_PRI1:
+            case MSGCHAR_PRI2:
+            case MSGCHAR_PRI3:
+            case MSGCHAR_NXT:
+                break;
+        }
+    }
 }
 
 RECOMP_HOOK_RETURN("Display_Update") void sf64_ru_after_display_update(void) { sf64_ru_apply_slot_translations_once(); }

@@ -1,5 +1,5 @@
 {
-  "name": "Russian_Language_Mod",
+  "name": "SF_Russian_Language_Mod",
   "display_name": "Russian Language Mod",
   "version": "1.0.0",
   "author": "gothplay3r",
@@ -11,6 +11,6 @@
   "minimum_recomp_version": "1.0.0",
   "dependencies": [],
   "nrm_filename": "Russian_Language_Mod_v1_0_0.nrm",
-  "package_filename": "gothplay3r-Russian_Language_Mod-1.0.0.zip",
+  "package_filename": "gothplay3r-SF_Russian_Language_Mod-1.0.0.zip",
   "nrm_description": "Russian localization."
 }

@@ -4,6 +4,15 @@ from __future__ import annotations
 import argparse, csv, json, sys, time, zipfile
 from pathlib import Path
 
+try:
+    from starlis_release_manifest import load_release_manifest, apply_runtime_metadata
+except Exception as e:
+    load_release_manifest = None
+    apply_runtime_metadata = None
+    RELEASE_MANIFEST_IMPORT_ERROR = str(e)
+else:
+    RELEASE_MANIFEST_IMPORT_ERROR = ""
+
 # Allow import when script is copied into project/scripts.
 def _add_script_dir():
     here = Path(__file__).resolve().parent
@@ -25,16 +34,31 @@ MAGIC_SLOT_A = 0x5255  # RU
 MAGIC_RADIO_A = 0x5252 # RR = radio route
 MAGIC_B = 0x3634
 TAIL = 0xCAFE
-RADIO_TOTAL_WORD_CAP = 64          # includes END
+RADIO_TOTAL_WORD_CAP = 64          # ordinary radio storage safety cap, includes END
 RADIO_BODY_WORD_CAP = RADIO_TOTAL_WORD_CAP - 1
 RADIO_VISUAL_LINE_CAP = 20
 RADIO_VISUAL_LINE_COUNT = 3
+MAP_BRIEFING_FREE_TOTAL_WORD_CAP = 128  # FIX45 manual map-briefing cap, includes END
+MAP_BRIEFING_FREE_BODY_WORD_CAP = MAP_BRIEFING_FREE_TOTAL_WORD_CAP - 1
+MAP_BRIEFING_FREE_VISUAL_LINE_CAP = 40
+MAP_BRIEFING_FREE_VISUAL_LINE_COUNT = 4
 MSG_END=0x0000; MSG_NWL=0x0001; MSG_SPC=0x000C; MSG_NXT=0x000F
 
-NON_RADIO_SECTION_PRECLEANES = (
+NON_RADIO_SECTION_PREFIXES = (
     '000_intro_story',
     '900_items_short_sfx',
 )
+
+def is_truthy(v) -> bool:
+    return str(v or '').strip().lower() in ('1', 'true', 'yes', 'y', 'on', 'да')
+
+def is_map_briefing_row(row: dict) -> bool:
+    sid = (row.get('section_id') or '').strip()
+    block = (row.get('block_id_v12') or '').strip()
+    return sid == '020_route_map_briefings' or block == '020_route_map_briefings'
+
+def map_briefing_free_enabled(row: dict) -> bool:
+    return is_map_briefing_row(row) and is_truthy(row.get('map_briefing_free_mode'))
 
 def parse_u16_hex(s: str) -> list[int]:
     out=[]
@@ -52,7 +76,7 @@ def is_radio_route_row(row: dict) -> bool:
     sid = (row.get('section_id') or '').strip()
     if not sid:
         return False
-    if any(sid.startswith(x) for x in NON_RADIO_SECTION_PRECLEANES):
+    if any(sid.startswith(x) for x in NON_RADIO_SECTION_PREFIXES):
         return False
     return True
 
@@ -106,7 +130,7 @@ def radio_wrap_text(text: str, max_line: int = RADIO_VISUAL_LINE_CAP, max_lines:
                 cur=w
         if cur:
             out.append(cur)
-    # Collapse accidental empty lines for radio; multi-box [NXT] is not part of this route.
+    # Collapse accidental empty lines for radio; multi-box [NXT] is not part of this lab route.
     out=[x for x in out if x.strip()]
     if len(out) > max_lines:
         return '\n'.join(out)  # Leave it untrimmed; validator will reject with clear reason.
@@ -120,9 +144,10 @@ def encode_plain(text: str, append_end: bool=True) -> tuple[list[int], list[str]
 
 def encode_row_route(row: dict) -> tuple[str, str, list[int], list[str], list[str], str]:
     """Return status, route, values-with-END, errors, warnings, patched_text."""
-    text = (row.get('translation_ru') or '').strip()
-    if not text:
+    raw_text = row.get('translation_ru') or ''
+    if not raw_text.strip():
         return 'EMPTY', 'none', [], [], [], ''
+    text = raw_text
     try:
         slot = int(float(row.get('slot_capacity_words') or row.get('word_count') or 0))
     except Exception:
@@ -140,6 +165,28 @@ def encode_row_route(row: dict) -> tuple[str, str, list[int], list[str], list[st
         warnings = list(slot_warnings)
         warnings.append('does not fit original slot and this row is not enabled for radio overflow')
         return 'NEEDS_MANUAL_ROUTE', 'none', slot_codes, [], warnings, text
+
+    if map_briefing_free_enabled(row):
+        # FIX45: map briefing manual mode. No word wrap, no strip/split.
+        # The translator controls line breaks and leading spaces. This still uses
+        # the radio-overflow blob at runtime, but only briefing rows are allowed
+        # to exceed the old ordinary-radio 64-word safety cap.
+        wrapped = text.replace('\r\n', '\n').replace('\r', '\n')
+        radio_codes_no_end, radio_errors, radio_warnings = encode_plain(wrapped, append_end=False)
+        if radio_errors:
+            return 'FAIL_UNSUPPORTED', 'none', radio_codes_no_end, radio_errors, radio_warnings, wrapped
+        stats = radio_line_stats(radio_codes_no_end)
+        warnings = list(dict.fromkeys(radio_warnings))
+        if len(radio_codes_no_end) > MAP_BRIEFING_FREE_BODY_WORD_CAP:
+            warnings.append(f'map briefing free body too long: {len(radio_codes_no_end)}/{MAP_BRIEFING_FREE_BODY_WORD_CAP} u16 before END')
+            return 'MAP_BRIEFING_FREE_TOO_LONG', 'none', radio_codes_no_end + [MSG_END], [], warnings, wrapped
+        if stats['line_count'] > MAP_BRIEFING_FREE_VISUAL_LINE_COUNT:
+            warnings.append(f'map briefing free has many lines: {stats["line_count"]}/{MAP_BRIEFING_FREE_VISUAL_LINE_COUNT}; build allowed, visual test required')
+        if stats['max_line'] > MAP_BRIEFING_FREE_VISUAL_LINE_CAP:
+            warnings.append(f'map briefing free visual line long: {stats["max_line"]}/{MAP_BRIEFING_FREE_VISUAL_LINE_CAP}; build allowed, visual test required')
+        vals = radio_codes_no_end + [MSG_END]
+        warnings.append(f'map briefing free route: manual newlines/spaces preserved, line lengths {stats["line_lengths"]}')
+        return 'READY_RADIO_OVERFLOW', 'radio_overflow', vals, [], warnings, wrapped
 
     wrapped = radio_wrap_text(text)
     radio_codes_no_end, radio_errors, radio_warnings = encode_plain(wrapped, append_end=False)
@@ -173,6 +220,41 @@ def verify_marker(b: bytearray, off: int, rid: int, cap: int, magic_a: int) -> l
     got = [int.from_bytes(b[off+i*2:off+i*2+2], 'big') for i in range(5)]
     return [] if got == expected and int.from_bytes(b[off+14:off+16], 'big') == TAIL else [got, expected]
 
+def scan_blob_markers(b: bytearray, magic_a: int) -> dict[int, tuple[int, int]]:
+    """Find runtime text blobs by their embedded RU/RR marker.
+
+    Source rebuilding through RecompModTool can move mod_binary offsets even when the
+    blob order/content is unchanged. The manifest remains useful metadata, but the
+    builder must not trust stale offsets blindly. This scan keeps old and newly
+    rebuilt templates patchable without hand-editing 779 offsets like a cave goblin.
+    """
+    out: dict[int, tuple[int, int]] = {}
+    for off in range(0, max(0, len(b) - HEADER_WORDS * 2 + 1), 2):
+        vals = [int.from_bytes(b[off+i*2:off+i*2+2], 'big') for i in range(HEADER_WORDS)]
+        if vals[0] == magic_a and vals[1] == MAGIC_B and vals[7] == TAIL:
+            rid = ((vals[2] & 0xFFFF) << 16) | (vals[3] & 0xFFFF)
+            cap = vals[4] & 0xFFFF
+            out[rid] = (off, cap)
+    return out
+
+def resolve_blob_offset(b: bytearray, item: dict, rid: int, manifest_off: int | None, manifest_cap: int, magic_a: int, scanned: dict[int, tuple[int, int]], errors: list[dict], label: str) -> tuple[int | None, int]:
+    """Return a verified blob offset/capacity, using marker scan as fallback."""
+    if manifest_off is not None and not verify_marker(b, int(manifest_off), rid, manifest_cap, magic_a):
+        return int(manifest_off), manifest_cap
+    found = scanned.get(rid)
+    if found is not None:
+        off, cap = found
+        if cap != manifest_cap:
+            # Prefer the real embedded capacity from the current binary, but report it.
+            errors.append({'id': rid, 'warning': f'{label} capacity came from marker scan: manifest={manifest_cap} binary={cap}'})
+        return off, cap
+    if manifest_off is None:
+        errors.append({'id': rid, 'error': f'{label} blob offset missing and marker scan did not find id'})
+    else:
+        bad = verify_marker(b, int(manifest_off), rid, manifest_cap, magic_a)
+        errors.append({'id': rid, 'error': f'{label} blob marker mismatch got={bad[0] if bad else None} expected={bad[1] if bad else None}; marker scan did not find id'})
+    return None, manifest_cap
+
 def write_blob_enabled(b: bytearray, off: int, cap: int, vals: list[int]) -> None:
     if not vals or vals[-1] != MSG_END:
         vals = vals + [MSG_END]
@@ -188,6 +270,8 @@ def write_blob_enabled(b: bytearray, off: int, cap: int, vals: list[int]) -> Non
 def patch_binary(mod_binary: bytes, manifest: dict, rows: list[dict]) -> tuple[bytes, dict]:
     b = bytearray(mod_binary)
     items = {str(int(item['id'])): item for item in manifest['items']}
+    scanned_slots = scan_blob_markers(b, MAGIC_SLOT_A)
+    scanned_radios = scan_blob_markers(b, MAGIC_RADIO_A)
     included=[]; skipped=[]; errors=[]
     for row in rows:
         rid_s = str(row.get('id','')).strip()
@@ -202,18 +286,10 @@ def patch_binary(mod_binary: bytes, manifest: dict, rows: list[dict]) -> tuple[b
         slot_off = item.get('slot_mod_binary_offset', item.get('mod_binary_offset'))
         radio_cap = int(item.get('radio_capacity_words') or RADIO_TOTAL_WORD_CAP)
         radio_off = item.get('radio_mod_binary_offset')
+        slot_off, slot_cap = resolve_blob_offset(b, item, rid, slot_off, slot_cap, MAGIC_SLOT_A, scanned_slots, errors, 'slot')
         if slot_off is None:
-            errors.append({'id': rid_s, 'error': 'slot blob offset missing'})
             continue
-        bad = verify_marker(b, int(slot_off), rid, slot_cap, MAGIC_SLOT_A)
-        if bad:
-            errors.append({'id': rid_s, 'error': f'slot blob marker mismatch got={bad[0]} expected={bad[1]}'})
-            continue
-        if radio_off is not None:
-            bad = verify_marker(b, int(radio_off), rid, radio_cap, MAGIC_RADIO_A)
-            if bad:
-                errors.append({'id': rid_s, 'error': f'radio blob marker mismatch got={bad[0]} expected={bad[1]}'})
-                continue
+        radio_off, radio_cap = resolve_blob_offset(b, item, rid, radio_off, radio_cap, MAGIC_RADIO_A, scanned_radios, errors, 'radio')
         # Always start by disabling both routes. Non-empty valid rows then enable exactly one route.
         write_blob_disabled(b, int(slot_off), slot_cap)
         if radio_off is not None:
@@ -247,44 +323,69 @@ def patch_binary(mod_binary: bytes, manifest: dict, rows: list[dict]) -> tuple[b
         'radio_body_word_cap': RADIO_BODY_WORD_CAP,
         'radio_visual_line_cap': RADIO_VISUAL_LINE_CAP,
         'radio_visual_line_count': RADIO_VISUAL_LINE_COUNT,
+        'map_briefing_free_total_word_cap': MAP_BRIEFING_FREE_TOTAL_WORD_CAP,
+        'map_briefing_free_body_word_cap': MAP_BRIEFING_FREE_BODY_WORD_CAP,
+        'map_briefing_free_visual_line_cap': MAP_BRIEFING_FREE_VISUAL_LINE_CAP,
+        'map_briefing_free_visual_line_count': MAP_BRIEFING_FREE_VISUAL_LINE_COUNT,
     }
 
-def load_mod_metadata(path: str | Path | None) -> dict:
-    default_desc = 'Russian localization.'
-    if not path:
+NRM_MANIFEST_DISPLAY_NAME = 'Russian Language Mod'
+NRM_MANIFEST_AUTHORS = ['gothplay3r']
+NRM_MANIFEST_DESCRIPTION = 'Russian localization.'
+NRM_MANIFEST_VERSION = '1.0.0'
+
+def _load_release_metadata(release_manifest_path: str | Path | None = None) -> tuple[dict, str, list[str], dict]:
+    warnings=[]
+    if load_release_manifest is None or apply_runtime_metadata is None:
+        warnings.append(f'release manifest helper import failed, using built-in fallback: {RELEASE_MANIFEST_IMPORT_ERROR}')
         return {
-            'display_name': 'Russian Language Mod',
-            'authors': ['gothplay3r'],
-            'description': default_desc,
-            'short_description': default_desc,
-            'version': '1.0.0',
-            'game_id': 'sf64',
-            'id': 'sf64_russian_language_mod',
-            'minimum_recomp_version': '1.0.0',
-        }
-    p = Path(path)
-    meta = json.loads(p.read_text(encoding='utf-8'))
-    nrm_desc = meta.get('nrm_description') or 'Russian localization.'
-    return {
-        'display_name': meta.get('display_name', 'Russian Language Mod'),
-        'authors': [meta.get('author', 'gothplay3r')],
-        'description': nrm_desc,
-        'short_description': nrm_desc,
-        'version': meta.get('version', '1.0.0'),
-        'game_id': meta.get('game_id', 'sf64'),
-        'id': meta.get('mod_id', 'sf64_russian_language_mod'),
-        'minimum_recomp_version': meta.get('minimum_recomp_version', '1.0.0'),
-    }
+            'display_name': NRM_MANIFEST_DISPLAY_NAME,
+            'authors': NRM_MANIFEST_AUTHORS,
+            'description': NRM_MANIFEST_DESCRIPTION,
+            'short_description': NRM_MANIFEST_DESCRIPTION,
+            'version': NRM_MANIFEST_VERSION,
+        }, '', warnings, {}
+    root = Path(__file__).resolve().parents[1]
+    rel = load_release_manifest(root=root, manifest_path=release_manifest_path)
+    meta = apply_runtime_metadata({}, rel)
+    return meta, str(rel.get('_manifest_path', '')), warnings, rel
 
-def patch_nrm(template_nrm: Path, manifest_path: Path, csv_path: Path, out_nrm: Path, metadata_path: str | Path | None = None, thumb_path: str | Path | None = None) -> dict:
+
+def _release_thumb_path(release_manifest: dict) -> Path | None:
+    if not release_manifest:
+        return None
+    root = Path(__file__).resolve().parents[1]
+    assets = release_manifest.get('release_assets') or {}
+    candidates = [assets.get('thumb_png'), assets.get('icon_png'), (release_manifest.get('thunderstore') or {}).get('icon_file')]
+    for rel in candidates:
+        if not rel:
+            continue
+        p = Path(str(rel))
+        if not p.is_absolute():
+            p = root / p
+        if p.exists() and p.is_file():
+            return p
+    return None
+
+def patch_nrm(template_nrm: Path, manifest_path: Path, csv_path: Path, out_nrm: Path, display_name: str | None = None, release_manifest_path: str | Path | None = None, metadata_path: str | Path | None = None, thumb_path: str | Path | None = None) -> dict:
     manifest = json.loads(manifest_path.read_text(encoding='utf-8'))
     rows = load_rows(csv_path)
-    release_meta = load_mod_metadata(metadata_path)
+    release_meta, release_manifest_loaded_from, release_manifest_warnings, release_manifest = _load_release_metadata(release_manifest_path)
+    if metadata_path:
+        try:
+            m = json.loads(Path(metadata_path).read_text(encoding='utf-8'))
+            release_meta.update({'id': m.get('mod_id'), 'version': m.get('version'), 'display_name': m.get('display_name'), 'description': m.get('nrm_description') or 'Russian localization.', 'short_description': m.get('nrm_description') or 'Russian localization.', 'authors': [m.get('author') or 'gothplay3r'], 'game_id': m.get('game_id') or 'sf64', 'minimum_recomp_version': m.get('minimum_recomp_version') or '1.0.0'})
+            release_meta = {k: v for k, v in release_meta.items() if v is not None}
+        except Exception as e:
+            release_manifest_warnings.append(f'metadata override failed: {e}')
+    if display_name and not release_manifest_loaded_from:
+        release_meta['display_name'] = display_name
     out_nrm.parent.mkdir(parents=True, exist_ok=True)
     with zipfile.ZipFile(template_nrm,'r') as zin:
         mod_binary = zin.read('mod_binary.bin')
         patched, report = patch_binary(mod_binary, manifest, rows)
         with zipfile.ZipFile(out_nrm,'w',compression=zipfile.ZIP_DEFLATED) as zout:
+            existing_names = set()
             for info in zin.infolist():
                 data = zin.read(info.filename)
                 if info.filename == 'mod_binary.bin':
@@ -296,25 +397,33 @@ def patch_nrm(template_nrm: Path, manifest_path: Path, csv_path: Path, out_nrm: 
                         data = json.dumps(meta, ensure_ascii=False, indent=4).encode('utf-8')
                     except Exception:
                         pass
+                existing_names.add(info.filename)
                 zout.writestr(info, data)
-            if thumb_path:
-                tp = Path(thumb_path)
-                if tp.exists():
-                    zout.writestr('thumb.png', tp.read_bytes())
+            thumb_path = Path(thumb_path) if thumb_path else _release_thumb_path(release_manifest)
+            if thumb_path is not None and 'thumb.png' not in existing_names and 'thumb.dds' not in existing_names:
+                zout.write(thumb_path, 'thumb.png')
+                report['thumb_embedded'] = True
+                report['thumb_source'] = str(thumb_path)
+            else:
+                report['thumb_embedded'] = bool('thumb.png' in existing_names or 'thumb.dds' in existing_names)
+                report['thumb_source'] = str(thumb_path) if thumb_path is not None else ''
     report['output_nrm'] = str(out_nrm)
+    report['release_manifest_path'] = release_manifest_loaded_from
+    report['release_manifest_warnings'] = release_manifest_warnings
     report['runtime_nrm_metadata'] = release_meta
     return report
 
 def main(argv=None) -> int:
-    ap = argparse.ArgumentParser(description='Build Russian Language Mod .nrm from the runtime template and translation workspace.');
+    ap = argparse.ArgumentParser(description='Patch prebuilt SF64 RU runtime template .nrm without clang/make/RecompModTool. Supports slot-copy and radio-only overflow.');
     ap.add_argument('--csv', required=True)
     ap.add_argument('--template-nrm', required=True)
     ap.add_argument('--manifest', required=True)
     ap.add_argument('--out-nrm', required=True)
-    ap.add_argument('--metadata', default='')
+    ap.add_argument('--display-name', default=NRM_MANIFEST_DISPLAY_NAME)
+    ap.add_argument('--release-manifest', default='')
     ap.add_argument('--report-json')
     args=ap.parse_args(argv)
-    rep = patch_nrm(Path(args.template_nrm), Path(args.manifest), Path(args.csv), Path(args.out_nrm), args.metadata or None, Path(args.metadata).resolve().parents[0] / 'assets' / 'icon.png' if args.metadata else None)
+    rep = patch_nrm(Path(args.template_nrm), Path(args.manifest), Path(args.csv), Path(args.out_nrm), args.display_name, args.release_manifest or None)
     if args.report_json:
         Path(args.report_json).write_text(json.dumps(rep, ensure_ascii=False, indent=2), encoding='utf-8')
     print(json.dumps(rep, ensure_ascii=False, indent=2))
